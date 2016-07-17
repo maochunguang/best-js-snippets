@@ -525,6 +525,23 @@ ${1:document}.addEventListener('${2:event}', function (e) {
   ${0}
 });
 ```
+#### `ga⇥` getAttribute
+```js
+${1:document}.getAttribute('${2:id}')
+```
+#### `ra⇥` removeAttribute
+```js
+${1:document}.removeAttribute('${2:attr}');
+```
+#### `ac⇥` appendChild
+```js
+${1:document}.appendChild(${2:elem});
+```
+#### `rc⇥` removeChild
+```js
+${1:document}.removeChild(${2:elem});
+```
+
 
 #### `gi⇥` getElementById
 ```js
@@ -553,6 +570,7 @@ ${1:document}.querySelector('${2:selector}')
 Array.from(${1:document}.querySelectorAll('${2:selector}'))
 ```
 `Array.from` polyfill required for ES5
+
 
 ### Node.js specifics
 
@@ -590,6 +608,14 @@ ${1:emitter}.on('${2:event}', (${3:arguments}) => {
 'use strict';
 ```
 
+### express snippets
+
+#### `ae⇥` addEventListener
+```js
+${1:document}.addEventListener('${2:event}', function (e) {
+  ${0}
+});
+```
 # License
 
 The MIT License (MIT)
