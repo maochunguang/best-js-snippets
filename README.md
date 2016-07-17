@@ -3,13 +3,9 @@ this is the best snippets of js that include epress ,node-fs,dom, and so on.
 
 *Note: this is a fork of [turbo-javascript](extrabacon/atom-turbo-javascript) that uses arrow functions by default and adds  more snippets for express,node-fs,dom-child and so on.*
 
-
-
 ## Snippets
 
 Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a ".".
-
-For example, `.fe` renders a chain-friendly version of the forEach snippet, while `fe` renders a full code block.
 
 ### Declarations
 
