@@ -1,0 +1,57 @@
+".source.js":
+  "app.get()":
+    "prefix": "appg"
+    "body": """
+    app.get('${1:path}', function(req, res, next){
+        $2;
+    });
+    """
+  "app.post()":
+    "prefix": "appp"
+    "body": """
+    app.post('${1:path}', function(req, res, next){
+        $2;
+    });
+    """
+  "app.all()":
+    "prefix": "appa"
+    "body": """
+    app.all('${1:path}', function(req, res, next){
+        $2;
+    });
+    """
+  "res.render(function)":
+    "prefix": "rerf"
+    "body": """
+    res.render('$1', function(err, html) {
+      res.send(html);
+    });
+    """
+  "res.render()":
+    "prefix": "rer"
+    "body": """
+    res.render('${1:file}', {
+        ${2:key}:${3:value}
+    });
+    """
+  "":
+    "prefix": ""
+    "body": """
+    setImmediate(() => {
+    \t${0:// body...}
+    });
+    """
+  "":
+    "prefix": ""
+    "body": """
+    setImmediate(() => {
+    \t${0:// body...}
+    });
+    """
+  "":
+    "prefix": ""
+    "body": """
+    setImmediate(() => {
+    \t${0:// body...}
+    });
+    """

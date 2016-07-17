@@ -1,0 +1,13 @@
+{
+  "name": "best-js-snippets",
+  "version": "0.0.1",
+  "description": "js and nodejs snippets",
+  "keywords": [
+      "js","snippets","nodejs","es6"
+  ],
+  "repository": "https://github.com/maochunguang/best-js-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+}
