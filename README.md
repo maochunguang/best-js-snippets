@@ -1,5 +1,10 @@
 ## best-js-snippets package
-this is the best snippets of js that include **es6**, **express** ,**String**, **nodejs-fs**,**nodejs-utils** ,**dom**, and so on.
+this is the best **atom snippets** of js that include **es6**, **express** ,**String**, **nodejs-fs**,**nodejs-utils** ,**dom**, and so on.
+
+## how to use this snippets
+1. `cd ~/.atom/package`
+2. `git clone https://github.com/maochunguang/best-js-snippets.git best-js-snippets`
+3. restart atom and enjoy !
 
 *Note: this is a fork of [turbo-javascript](extrabacon/atom-turbo-javascript) that uses arrow functions by default and adds  more snippets for express,node-fs,dom-child and so on.*
 
@@ -33,13 +38,63 @@ var ${1:path} = req.path;
 
 ### String snippets
 
-
+#### `sle⇥`,`sca⇥`,`scca⇥`,`sco⇥`,`sic⇥`,`sid⇥`,`slid⇥`,
+`ssw⇥`,`sew⇥`,`slc⇥`,`smt⇥`,`sre⇥`,`srp⇥`,`ssr⇥`,`lic⇥`,`sub⇥`,`sstr⇥`,`stou⇥`,`stol⇥`,`strm⇥`,`stos⇥`
+string method
+```js
+${1:value}.length;
+${1:value}.charAt(${2:index});
+${1:value}.charCodeAt(${2:index});
+${1:value}.concat(${2:index});
+${1:value}.includes(${2:index});
+${1:value}.indexOf(${2:index});
+${1:value}.lastIndexOf(${2:index});
+${1:value}.startsWith(${2:index});
+${1:value}.endsWith(${2:index});
+${1:value}.localeCompare(${2:index});
+${1:value}.match(${2:index});
+${1:value}.replace(${1:str}, ${2:reg}, '${3:newStr}');
+${1:value}.repeat(${2:index});
+${1:value}.search(${2:index});
+${1:value}.slice(${2:begin},${3:end});
+${1:value}.split(${2:index});
+${1:value}.substr(${2:start},${3:length});
+${1:value}.substring(${2:begin},${3:end});
+${1:value}.toUpperCase();
+${1:value}.toLowerCase();
+${1:value}.trim();
+${1:value}.toString();
+```
 ### nodejs-fs snippets
 
-
+#### `fswrite⇥`,`fswrites⇥`,`fsread⇥`,`fsreads⇥`,`fsexists⇥`,`fsexistss⇥`
+```js
+fs.writeFile(${1:filename}, ${2:content});
+fs.writeFileSync(${1:filename}, ${2:content});
+fs.readFile(${1:filename}, ${2:charset});
+fs.readFileSync(${1:filename}, ${2:charset});
+fs.exists(${0:filename});
+fs.existsSync(${0:filename});
+```
 
 ### nodejs-utils snippets
 
+#### `isa⇥`,`isbo⇥`,`isbu⇥`,`isd⇥`,`ise⇥`,`isf⇥`,`isn⇥`,`isnm⇥`,`iso⇥`,`isr⇥`,`iss⇥`,`issy⇥`,`isun⇥`, util typeof Object
+```js
+util.isArray(${1:name});
+util.isBoolean(${1:name});
+util.isBuffer(${1:name});
+util.isDate(${1:name});
+util.isError(${1:name});
+util.isFunction(${1:name});
+util.isNull(${1:name});
+util.isNumber(${1:name});
+util.isObject(${1:name});
+util.isRegExp(${1:name});
+util.isString(${1:name});
+util.isSymbol(${1:name});
+util.isUndefined(${1:name});
+```
 
 ### Declarations
 

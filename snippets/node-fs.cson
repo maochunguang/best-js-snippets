@@ -39,26 +39,8 @@
     "body": """
     fs.statSync(${0:filename});
     """
-
   "path.join":
     "prefix": "pjoin"
     "body": """
     path.join(${1:dir}, ${2:file});
-    """
-
-  "util.inherits":
-    "prefix": "inherits"
-    "body": """
-    util.inherits(${1:constructor}, ${2:superConstructor});
-    """
-  "util.format":
-    "prefix": "format"
-    "body": """
-    util.format(${1:tpl}, ${2:val});
-    """
-
-  "Array.isArray":
-    "prefix": "isArray"
-    "body": """
-    Array.isArray(${0:array});
     """

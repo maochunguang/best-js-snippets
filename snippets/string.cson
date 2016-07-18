@@ -9,7 +9,7 @@
     prefix: "scca"
     body: "${1:value}.charCodeAt(${2:str});"
   "string concat":
-    prefix: "sre"
+    prefix: "sco"
     body: "${1:str1}.concat(${2:str2});"
   "string includes":
     prefix: "sic"
