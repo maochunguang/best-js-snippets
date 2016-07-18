@@ -1,77 +1,86 @@
 ## best-js-snippets package
-this is the best snippets of js that include epress ,node-fs,dom, and so on.
+this is the best snippets of js that include **es6**, **express** ,**String**, **nodejs-fs**,**nodejs-utils** ,**dom**, and so on.
 
 *Note: this is a fork of [turbo-javascript](extrabacon/atom-turbo-javascript) that uses arrow functions by default and adds  more snippets for express,node-fs,dom-child and so on.*
 
-## Snippets
+### Express snippets
 
-Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a ".".
+#### `aget⇥`,`apos⇥`,`aall⇥`,`adel⇥`, `aput⇥`
+```js
+app.get('${1:path}', (req, res, next) => {
+});
+......
+app.put('${1:path}', (req, res, next) => {
+});
+```
+#### `rqa⇥`,`rqb⇥`,`rqc⇥`,`rqg⇥`,`rqh⇥`,`rqi⇥`,
+```js
+var ${1:body} = req.accepts("${2:name}");
+var ${1:body} = req.body;
+var ${1:cookie} = req.cookie;
+var ${1:key} = req.get("${2:name}");
+var ${1:host} = req.hostname;
+var ${1:ip} = req.ip;
+```
+#### `rqm⇥`,`rqp⇥`,`rqpa⇥`,`rqpr⇥`,`rqpt⇥`
+```js
+var ${1:method} = req.method;
+var ${1:param} = req.params;
+var ${1:path} = req.path;
+var ${1:protocol} = req.protocol;
+var ${1:path} = req.path;
+```
+
+### String snippets
+
+
+### nodejs-fs snippets
+
+
+
+### nodejs-utils snippets
+
 
 ### Declarations
 
-#### `v⇥` var statement
+#### `v⇥`  `ve⇥` ,var statement
 ```js
 var ${1:name};
-```
-
-#### `ve⇥` var assignment
-```js
 var ${1:name} = ${2:value};
 ```
 
-#### `l⇥` let statement
+#### `l⇥` ,`le⇥` let statement
 ```js
 let ${1:name};
-```
-
-#### `le⇥` let assignment
-```js
 let ${1:name} = ${2:value};
 ```
 
-#### `co⇥` const statement
+#### `co⇥` ,`coe⇥`,`cos⇥`  const statement
 ```js
 const ${1:name};
-```
-
-#### `coe⇥` const assignment
-```js
 const ${1:name} = ${2:value};
-```
-
-#### `cos⇥` const symbol
-```js
 const ${1:name} = Symbol('${1:name}');
 ```
 
-
 ### Flow Control
 
-#### `if⇥` if statement
+#### `if⇥`,`el⇥` , `ife⇥` ,`ei⇥` if else statement
 ```js
+//if⇥
 if (${1:condition}) {
   ${0}
 }
-```
-
-#### `el⇥` else statement
-```js
+//el⇥
 else {
   ${0}
 }
-```
-
-#### `ife⇥` else statement
-```js
+//ife⇥
 if (${1:condition}) {
   ${2}
 } else {
   ${3}
 }
-```
-
-#### `ei⇥` else if statement
-```js
+//ei⇥
 else if (${1:condition}) {
   ${0}
 }
@@ -157,42 +166,28 @@ function ${1:name}(${2:arguments}) {
 })(${2});
 ```
 
-#### `fa⇥` function apply
+#### `fa⇥` ,`fb⇥`,`fc⇥`, function apply,bind,call
 ```js
 ${1:fn}.apply(${2:this}, ${3:arguments})
-```
-
-#### `fc⇥` function call
-```js
+${1:fn}.bind(${2:this}, ${3:arguments})
 ${1:fn}.call(${2:this}, ${3:arguments})
 ```
 
-#### `fb⇥` function bind
+#### `af⇥`,`afb⇥`  arrow function (ES6)
 ```js
-${1:fn}.bind(${2:this}, ${3:arguments})
-```
-
-#### `af⇥` arrow function (ES6)
-```js
+//`af⇥`
 ${1:(arguments)} => ${2:statement}
-```
-
-#### `afb⇥` arrow function with body (ES6)
-```js
+//`afb⇥`
 ${1:(arguments)} => {
 \t${0}
 }
 ```
 
-#### `gf⇥` generator function (ES6)
+#### `gf⇥`,`gfn⇥` generator function (ES6)
 ```js
 function* (${1:arguments}) {
   ${0}
 }
-```
-
-#### `gfn⇥` named generator function (ES6)
-```js
 function* ${1:name}(${1:arguments}) {
   ${0}
 }
@@ -277,15 +272,11 @@ ${1:method}(${2:arguments}) {
 }
 ```
 
-#### `get⇥` getter (ES6 syntax)
+#### `get⇥`,`set⇥`  getter ,setter (ES6 syntax)
 ```js
 get ${1:property}() {
   ${0}
 }
-```
-
-#### `set⇥` setter (ES6 syntax)
-```js
 set ${1:property}(${2:value}) {
   ${0}
 }
@@ -310,46 +301,16 @@ ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
 
 ### Returning values
 
-#### `r⇥` return
+#### `r⇥`,`rth⇥`,`rn⇥`,`rt⇥` ,`rf⇥` ,`r0⇥`, `r-1⇥` return
 ```js
-return ${0};
-```
+return ${0};    //`r⇥`
+return this;    //`rth⇥`
+return null;    //`rn⇥`
+return true;    //`rt⇥`
+return false;   //`rf⇥`
+return 0;       //`r0⇥`
+return -1;      //`r-1⇥`
 
-#### `rth⇥` return this
-```js
-return this;
-```
-
-#### `rn⇥` return null
-```js
-return null;
-```
-
-#### `rt⇥` return true
-```js
-return true;
-```
-
-#### `rf⇥` return false
-```js
-return false;
-```
-
-#### `r0⇥` return 0
-```js
-return 0;
-```
-
-#### `r-1⇥` return -1
-```js
-return -1;
-```
-
-#### `rp⇥` return Promise (ES6)
-```js
-return new Promise((resolve, reject) => {
-  ${0}
-});
 ```
 
 ### Types
@@ -372,6 +333,13 @@ ${1:source} instanceof ${2:Object}
 ```
 
 ### Promises
+
+#### `rp⇥` return Promise (ES6)
+```js
+return new Promise((resolve, reject) => {
+  ${0}
+});
+```
 
 #### `p⇥` new Promise (ES6)
 ```js
@@ -469,49 +437,32 @@ afterEach(() => {
 
 ### Console
 
-#### `cl⇥` console.log
+#### `cl⇥`,`cll⇥` , `ce⇥`,`cw⇥`  console.log
 ```js
 console.log('${1:title}', ${2:$1}$0);
-```
-
-#### `cll⇥` console.log (text only)
-```js
 console.log(${0});
-```
-
-#### `ce⇥` console.error
-```js
 console.error(${0});
-```
-
-#### `cw⇥` console.warn
-```js
 console.warn(${0});
 ```
 
+
 ### Timers
 
-#### `st⇥` setTimeout
+#### `st⇥`,`si⇥` ,`sim⇥` setTimeout,setInterval
 ```js
+//`st⇥`
 setTimeout(() => {
   ${0}
 }, ${1:delay});
-```
-
-#### `si⇥` setInterval
-```js
+//`si⇥`
 setTimeout(() => {
   ${0}
 }, ${1:delay});
-```
-
-#### `sim⇥` setInterval
-```js
+//`sim⇥`
 setImmediate(() => {
   ${0}
 });
 ```
-
 
 ### DOM specifics
 
@@ -521,23 +472,13 @@ ${1:document}.addEventListener('${2:event}', function (e) {
   ${0}
 });
 ```
-#### `ga⇥` getAttribute
+#### `ga⇥`,`ra⇥` , `ac⇥`,`rc⇥`  get,setAttribute,append,removeChild
 ```js
 ${1:document}.getAttribute('${2:id}')
-```
-#### `ra⇥` removeAttribute
-```js
 ${1:document}.removeAttribute('${2:attr}');
-```
-#### `ac⇥` appendChild
-```js
 ${1:document}.appendChild(${2:elem});
-```
-#### `rc⇥` removeChild
-```js
 ${1:document}.removeChild(${2:elem});
 ```
-
 
 #### `gi⇥` getElementById
 ```js
@@ -604,14 +545,6 @@ ${1:emitter}.on('${2:event}', (${3:arguments}) => {
 'use strict';
 ```
 
-### express snippets
-
-#### `ae⇥` addEventListener
-```js
-${1:document}.addEventListener('${2:event}', function (e) {
-  ${0}
-});
-```
 # License
 
 The MIT License (MIT)

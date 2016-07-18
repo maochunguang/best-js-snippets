@@ -1,6 +1,6 @@
 ".source.js":
   "string length":
-    prefix: "sre"
+    prefix: "sle"
     body: "${1:str}.length;"
   "string charAt":
     prefix: "sca"

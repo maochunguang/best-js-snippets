@@ -2,7 +2,7 @@
   "app.get()":
     "prefix": "aget"
     "body": """
-    app.get('${1:path}', function(req, res, next){
+    app.get('${1:path}', (req, res, next) => {
         $2;
     });
     """
@@ -95,7 +95,7 @@
     });
     """
   "req.path":
-    "prefix": "reqpa"
+    "prefix": "rqpt"
     "body": """
     var ${1:path} = req.path;
     });
