@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Best-js-snippets by maochunguang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Best-js-snippets</h1>
+      <h2 class="project-tagline">atom js snippets</h2>
+      <a href="https://github.com/maochunguang/best-js-snippets" class="btn">View on GitHub</a>
+      <a href="https://github.com/maochunguang/best-js-snippets/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/maochunguang/best-js-snippets/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="best-js-snippets-package" class="anchor" href="#best-js-snippets-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>best-js-snippets package</h2>
+
+<p>this is the best snippets of js that include epress ,node-fs,dom, and so on.</p>
+
+<p><em>Note: this is a fork of <a href="extrabacon/atom-turbo-javascript">turbo-javascript</a> that uses arrow functions by default and adds  more snippets for express,node-fs,dom-child and so on.</em></p>
+
+<h2>
+<a id="snippets" class="anchor" href="#snippets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Snippets</h2>
+
+<p>Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a ".".</p>
+
+<h3>
+<a id="declarations" class="anchor" href="#declarations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Declarations</h3>
+
+<h4>
+<a id="v-var-statement" class="anchor" href="#v-var-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>v⇥</code> var statement</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> ${<span class="pl-c1">1</span><span class="pl-k">:</span>name};</pre></div>
+
+<h4>
+<a id="ve-var-assignment" class="anchor" href="#ve-var-assignment" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ve⇥</code> var assignment</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> ${<span class="pl-c1">1</span><span class="pl-k">:</span>name} <span class="pl-k">=</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span>value};</pre></div>
+
+<h4>
+<a id="l-let-statement" class="anchor" href="#l-let-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>l⇥</code> let statement</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">let</span> ${<span class="pl-c1">1</span><span class="pl-k">:</span>name};</pre></div>
+
+<h4>
+<a id="le-let-assignment" class="anchor" href="#le-let-assignment" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>le⇥</code> let assignment</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">let</span> ${<span class="pl-c1">1</span><span class="pl-k">:</span>name} <span class="pl-k">=</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span>value};</pre></div>
+
+<h4>
+<a id="co-const-statement" class="anchor" href="#co-const-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>co⇥</code> const statement</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">const</span> <span class="pl-c1">$</span>{1:<span class="pl-c1">name</span>};</pre></div>
+
+<h4>
+<a id="coe-const-assignment" class="anchor" href="#coe-const-assignment" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>coe⇥</code> const assignment</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">const</span> <span class="pl-c1">$</span>{1:<span class="pl-c1">name</span>} <span class="pl-k">=</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span>value};</pre></div>
+
+<h4>
+<a id="cos-const-symbol" class="anchor" href="#cos-const-symbol" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>cos⇥</code> const symbol</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">const</span> <span class="pl-c1">$</span>{1:<span class="pl-c1">name</span>} <span class="pl-k">=</span> <span class="pl-c1">Symbol</span>(<span class="pl-s"><span class="pl-pds">'</span>${1:name}<span class="pl-pds">'</span></span>);</pre></div>
+
+<h3>
+<a id="flow-control" class="anchor" href="#flow-control" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Flow Control</h3>
+
+<h4>
+<a id="if-if-statement" class="anchor" href="#if-if-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>if⇥</code> if statement</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">if</span> (${<span class="pl-c1">1</span><span class="pl-k">:</span>condition}) {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="el-else-statement" class="anchor" href="#el-else-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>el⇥</code> else statement</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">else</span> {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="ife-else-statement" class="anchor" href="#ife-else-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ife⇥</code> else statement</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">if</span> (${<span class="pl-c1">1</span><span class="pl-k">:</span>condition}) {
+  ${<span class="pl-c1">2</span>}
+} <span class="pl-k">else</span> {
+  ${<span class="pl-c1">3</span>}
+}</pre></div>
+
+<h4>
+<a id="ei-else-if-statement" class="anchor" href="#ei-else-if-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ei⇥</code> else if statement</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">else</span> <span class="pl-k">if</span> (${<span class="pl-c1">1</span><span class="pl-k">:</span>condition}) {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="fl-for-loop" class="anchor" href="#fl-for-loop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>fl⇥</code> for loop</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">for</span> (<span class="pl-k">let</span> ${<span class="pl-c1">1</span><span class="pl-k">:</span>i} <span class="pl-k">=</span> <span class="pl-c1">0</span>; ${<span class="pl-c1">1</span><span class="pl-k">:</span>i} <span class="pl-k">&lt;</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span>iterable}${<span class="pl-c1">3</span><span class="pl-k">:</span>.<span class="pl-c1">length</span>}; ${<span class="pl-c1">1</span><span class="pl-k">:</span>i}<span class="pl-k">++</span>) {
+  ${<span class="pl-c1">4</span>}
+}</pre></div>
+
+<h4>
+<a id="fi-for-in-loop" class="anchor" href="#fi-for-in-loop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>fi⇥</code> for in loop</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">for</span> (<span class="pl-k">let</span> ${<span class="pl-c1">1</span><span class="pl-k">:</span>key} <span class="pl-k">in</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span>source}) {
+  <span class="pl-k">if</span> (${<span class="pl-c1">2</span><span class="pl-k">:</span>source}.<span class="pl-en">hasOwnProperty</span>(${<span class="pl-c1">1</span><span class="pl-k">:</span>key})) {
+    ${<span class="pl-c1">0</span>}
+  }
+}</pre></div>
+
+<h4>
+<a id="fo-for-of-loop-es6" class="anchor" href="#fo-for-of-loop-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>fo⇥</code> for of loop (ES6)</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">for</span> (<span class="pl-k">let</span> ${<span class="pl-c1">1</span><span class="pl-k">:</span>key} <span class="pl-k">of</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span>source}) {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="wl-while-loop" class="anchor" href="#wl-while-loop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>wl⇥</code> while loop</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">while</span> (${<span class="pl-c1">1</span><span class="pl-k">:</span>condition}) {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="tc-trycatch" class="anchor" href="#tc-trycatch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>tc⇥</code> try/catch</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">try</span> {
+  ${<span class="pl-c1">1</span>}
+} <span class="pl-k">catch</span> (${<span class="pl-c1">2</span><span class="pl-k">:</span>err}) {
+  ${<span class="pl-c1">3</span>}
+}</pre></div>
+
+<h4>
+<a id="tf-tryfinally" class="anchor" href="#tf-tryfinally" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>tf⇥</code> try/finally</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">try</span> {
+ ${<span class="pl-c1">1</span>}
+} <span class="pl-k">finally</span> {
+ ${<span class="pl-c1">2</span>}
+}</pre></div>
+
+<h4>
+<a id="tcf-trycatchfinally" class="anchor" href="#tcf-trycatchfinally" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>tcf⇥</code> try/catch/finally</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">try</span> {
+  ${<span class="pl-c1">1</span>}
+} <span class="pl-k">catch</span> (${<span class="pl-c1">2</span><span class="pl-k">:</span>err}) {
+  ${<span class="pl-c1">3</span>}
+} <span class="pl-k">finally</span> {
+  ${<span class="pl-c1">4</span>}
+}</pre></div>
+
+<h3>
+<a id="functions" class="anchor" href="#functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Functions</h3>
+
+<h4>
+<a id="f-anonymous-function" class="anchor" href="#f-anonymous-function" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>f⇥</code> anonymous function</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> (<span class="pl-smi">$</span>{<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-v">arguments</span>}) {${<span class="pl-c1">0</span>}}</pre></div>
+
+<h4>
+<a id="fn-named-function" class="anchor" href="#fn-named-function" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>fn⇥</code> named function</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> ${1:name}(<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span><span class="pl-v">arguments</span>}) {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="iife-immediately-invoked-function-expression-iife" class="anchor" href="#iife-immediately-invoked-function-expression-iife" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>iife⇥</code> immediately-invoked function expression (IIFE)</h4>
+
+<div class="highlight highlight-source-js"><pre>((<span class="pl-smi">$</span>{<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-v">arguments</span>}) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+})(${<span class="pl-c1">2</span>});</pre></div>
+
+<h4>
+<a id="fa-function-apply" class="anchor" href="#fa-function-apply" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>fa⇥</code> function apply</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>fn}.<span class="pl-c1">apply</span>(${<span class="pl-c1">2</span><span class="pl-k">:</span><span class="pl-v">this</span>}, ${<span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-v">arguments</span>})</pre></div>
+
+<h4>
+<a id="fc-function-call" class="anchor" href="#fc-function-call" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>fc⇥</code> function call</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>fn}.<span class="pl-c1">call</span>(${<span class="pl-c1">2</span><span class="pl-k">:</span><span class="pl-v">this</span>}, ${<span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-v">arguments</span>})</pre></div>
+
+<h4>
+<a id="fb-function-bind" class="anchor" href="#fb-function-bind" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>fb⇥</code> function bind</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>fn}.<span class="pl-en">bind</span>(${<span class="pl-c1">2</span><span class="pl-k">:</span><span class="pl-v">this</span>}, ${<span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-v">arguments</span>})</pre></div>
+
+<h4>
+<a id="af-arrow-function-es6" class="anchor" href="#af-arrow-function-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>af⇥</code> arrow function (ES6)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>(<span class="pl-v">arguments</span>)} <span class="pl-k">=&gt;</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span>statement}</pre></div>
+
+<h4>
+<a id="afb-arrow-function-with-body-es6" class="anchor" href="#afb-arrow-function-with-body-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>afb⇥</code> arrow function with body (ES6)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>(<span class="pl-v">arguments</span>)} <span class="pl-k">=&gt;</span> {
+\t${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="gf-generator-function-es6" class="anchor" href="#gf-generator-function-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>gf⇥</code> generator function (ES6)</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span><span class="pl-k">*</span> (<span class="pl-smi">$</span>{<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-v">arguments</span>}) {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="gfn-named-generator-function-es6" class="anchor" href="#gfn-named-generator-function-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>gfn⇥</code> named generator function (ES6)</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span><span class="pl-k">*</span> ${1:name}(<span class="pl-smi">$</span>{<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-v">arguments</span>}) {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h3>
+<a id="iterables" class="anchor" href="#iterables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Iterables</h3>
+
+<h4>
+<a id="fe-foreach-loop-chainable" class="anchor" href="#fe-foreach-loop-chainable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>fe⇥</code> forEach loop (chainable)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>iterable}.<span class="pl-en">forEach</span>((<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span>item}) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="map-map-function-chainable" class="anchor" href="#map-map-function-chainable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>map⇥</code> map function (chainable)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>iterable}.<span class="pl-en">map</span>((<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span>item}) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="reduce-reduce-function-chainable" class="anchor" href="#reduce-reduce-function-chainable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>reduce⇥</code> reduce function (chainable)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>iterable}.<span class="pl-en">reduce</span>((<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span>previous}, <span class="pl-smi">$</span>{<span class="pl-c1">3</span><span class="pl-k">:</span>current}) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+}${<span class="pl-c1">4</span><span class="pl-k">:</span>, initial});</pre></div>
+
+<h4>
+<a id="filter-filter-function-chainable" class="anchor" href="#filter-filter-function-chainable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>filter⇥</code> filter function (chainable)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>iterable}.<span class="pl-en">filter</span>((<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span>item}) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="find-es6-find-function-chainable" class="anchor" href="#find-es6-find-function-chainable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>find⇥</code> ES6 find function (chainable)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>iterable}.<span class="pl-c1">find</span>((<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span>item}) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h3>
+<a id="objects-and-classes" class="anchor" href="#objects-and-classes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Objects and classes</h3>
+
+<h4>
+<a id="c-class-es6" class="anchor" href="#c-class-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>c⇥</code> class (ES6)</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">$</span>{<span class="pl-c1">1</span><span class="pl-k">:</span>name} {
+  <span class="pl-en">constructor</span>(<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span><span class="pl-v">arguments</span>}) {
+    ${<span class="pl-c1">0</span>}
+  }
+}</pre></div>
+
+<h4>
+<a id="cex-child-class-es6" class="anchor" href="#cex-child-class-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>cex⇥</code> child class (ES6)</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">$</span>{<span class="pl-c1">1</span><span class="pl-k">:</span>name} <span class="pl-k">extends</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span>base} {
+  <span class="pl-en">constructor</span>(<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span><span class="pl-v">arguments</span>}) {
+    <span class="pl-v">super</span>(${<span class="pl-c1">2</span><span class="pl-k">:</span><span class="pl-v">arguments</span>})
+    ${<span class="pl-c1">0</span>}
+  }
+}</pre></div>
+
+<h4>
+<a id="cf-class-function-es6" class="anchor" href="#cf-class-function-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>cf⇥</code> class function (ES6)</h4>
+
+<div class="highlight highlight-source-js"><pre>{$1<span class="pl-k">:</span>name}({$2<span class="pl-k">:</span><span class="pl-v">arguments</span>}) {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="kv-keyvalue-pair" class="anchor" href="#kv-keyvalue-pair" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>kv⇥</code> key/value pair</h4>
+
+<p>Javascript:</p>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>key}<span class="pl-k">:</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">'</span>value<span class="pl-pds">'</span></span>}</pre></div>
+
+<h4>
+<a id="m-method-es6-syntax" class="anchor" href="#m-method-es6-syntax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>m⇥</code> method (ES6 syntax)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>method}(${<span class="pl-c1">2</span><span class="pl-k">:</span><span class="pl-v">arguments</span>}) {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="get-getter-es6-syntax" class="anchor" href="#get-getter-es6-syntax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>get⇥</code> getter (ES6 syntax)</h4>
+
+<div class="highlight highlight-source-js"><pre>get ${<span class="pl-c1">1</span><span class="pl-k">:</span>property}() {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="set-setter-es6-syntax" class="anchor" href="#set-setter-es6-syntax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>set⇥</code> setter (ES6 syntax)</h4>
+
+<div class="highlight highlight-source-js"><pre>set ${<span class="pl-c1">1</span><span class="pl-k">:</span>property}(${<span class="pl-c1">2</span><span class="pl-k">:</span>value}) {
+  ${<span class="pl-c1">0</span>}
+}</pre></div>
+
+<h4>
+<a id="gs-getter-and-setter-es6-syntax" class="anchor" href="#gs-getter-and-setter-es6-syntax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>gs⇥</code> getter and setter (ES6 syntax)</h4>
+
+<div class="highlight highlight-source-js"><pre>get ${<span class="pl-c1">1</span><span class="pl-k">:</span>property}() {
+  ${<span class="pl-c1">0</span>}
+}
+set ${<span class="pl-c1">1</span><span class="pl-k">:</span>property}(${<span class="pl-c1">2</span><span class="pl-k">:</span>value}) {
+
+}</pre></div>
+
+<h4>
+<a id="proto-prototype-method-chainable" class="anchor" href="#proto-prototype-method-chainable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>proto⇥</code> prototype method (chainable)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>Class}.<span class="pl-c1">prototype</span>.<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span>methodName} <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">$</span>{<span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-v">arguments</span>}) {
+  ${<span class="pl-c1">0</span>}
+};</pre></div>
+
+<h3>
+<a id="returning-values" class="anchor" href="#returning-values" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Returning values</h3>
+
+<h4>
+<a id="r-return" class="anchor" href="#r-return" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>r⇥</code> return</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">return</span> ${<span class="pl-c1">0</span>};</pre></div>
+
+<h4>
+<a id="rth-return-this" class="anchor" href="#rth-return-this" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>rth⇥</code> return this</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">return</span> <span class="pl-v">this</span>;</pre></div>
+
+<h4>
+<a id="rn-return-null" class="anchor" href="#rn-return-null" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>rn⇥</code> return null</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">return</span> <span class="pl-c1">null</span>;</pre></div>
+
+<h4>
+<a id="rt-return-true" class="anchor" href="#rt-return-true" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>rt⇥</code> return true</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">return</span> <span class="pl-c1">true</span>;</pre></div>
+
+<h4>
+<a id="rf-return-false" class="anchor" href="#rf-return-false" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>rf⇥</code> return false</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">return</span> <span class="pl-c1">false</span>;</pre></div>
+
+<h4>
+<a id="r0-return-0" class="anchor" href="#r0-return-0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>r0⇥</code> return 0</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">return</span> <span class="pl-c1">0</span>;</pre></div>
+
+<h4>
+<a id="r-1-return--1" class="anchor" href="#r-1-return--1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>r-1⇥</code> return -1</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">return</span> <span class="pl-k">-</span><span class="pl-c1">1</span>;</pre></div>
+
+<h4>
+<a id="rp-return-promise-es6" class="anchor" href="#rp-return-promise-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>rp⇥</code> return Promise (ES6)</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-en">Promise</span>((<span class="pl-smi">resolve</span>, <span class="pl-smi">reject</span>) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h3>
+<a id="types" class="anchor" href="#types" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Types</h3>
+
+<h4>
+<a id="s-string" class="anchor" href="#s-string" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>S⇥</code> String</h4>
+
+<h4>
+<a id="n-number" class="anchor" href="#n-number" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>N⇥</code> Number</h4>
+
+<h4>
+<a id="o-object" class="anchor" href="#o-object" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>O⇥</code> Object</h4>
+
+<h4>
+<a id="a-array" class="anchor" href="#a-array" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>A⇥</code> Array</h4>
+
+<h4>
+<a id="d-date" class="anchor" href="#d-date" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>D⇥</code> Date</h4>
+
+<h4>
+<a id="rx-regexp" class="anchor" href="#rx-regexp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>Rx⇥</code> RegExp</h4>
+
+<h4>
+<a id="tof-typeof-comparison" class="anchor" href="#tof-typeof-comparison" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>tof⇥</code> typeof comparison</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">typeof</span> ${<span class="pl-c1">1</span><span class="pl-k">:</span>source} <span class="pl-k">===</span> <span class="pl-s"><span class="pl-pds">'</span>${2:undefined}<span class="pl-pds">'</span></span></pre></div>
+
+<h4>
+<a id="iof-instanceof-comparison" class="anchor" href="#iof-instanceof-comparison" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>iof⇥</code> instanceof comparison</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>source} <span class="pl-k">instanceof</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span><span class="pl-c1">Object</span>}</pre></div>
+
+<h3>
+<a id="promises" class="anchor" href="#promises" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Promises</h3>
+
+<h4>
+<a id="p-new-promise-es6" class="anchor" href="#p-new-promise-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>p⇥</code> new Promise (ES6)</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">new</span> <span class="pl-en">Promise</span>((<span class="pl-smi">resolve</span>, <span class="pl-smi">reject</span>) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+})</pre></div>
+
+<h4>
+<a id="then-promisethen-chainable" class="anchor" href="#then-promisethen-chainable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>then⇥</code> Promise.then (chainable)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>promise}.<span class="pl-en">then</span>((<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span>value}) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="catch-promisecatch-chainable" class="anchor" href="#catch-promisecatch-chainable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>catch⇥</code> Promise.catch (chainable)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>promise}.<span class="pl-en">catch</span>((<span class="pl-smi">$</span>{<span class="pl-c1">2</span><span class="pl-k">:</span>err}) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h3>
+<a id="es6-modules" class="anchor" href="#es6-modules" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ES6 modules</h3>
+
+<h4>
+<a id="ex-module-export" class="anchor" href="#ex-module-export" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ex⇥</code> module export</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">export</span> ${1:<span class="pl-smi">member</span>};</pre></div>
+
+<h4>
+<a id="im-module-import" class="anchor" href="#im-module-import" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>im⇥</code> module import</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> ${1:*} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>${2:module}<span class="pl-pds">'</span></span>;</pre></div>
+
+<h4>
+<a id="ima-module-import-as" class="anchor" href="#ima-module-import-as" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ima⇥</code> module import as</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> ${1:*} <span class="pl-smi">as</span> ${2:<span class="pl-smi">name</span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>${3:module}<span class="pl-pds">'</span></span>;</pre></div>
+
+<h4>
+<a id="imn-named-module-import" class="anchor" href="#imn-named-module-import" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>imn⇥</code> named module import</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> \{ ${1:<span class="pl-smi">name</span>} \} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>${2:module}<span class="pl-pds">'</span></span>;</pre></div>
+
+<h3>
+<a id="bdd-testing-mocha-jasmine-etc" class="anchor" href="#bdd-testing-mocha-jasmine-etc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BDD testing (Mocha, Jasmine, etc.)</h3>
+
+<h4>
+<a id="desc-describe" class="anchor" href="#desc-describe" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>desc⇥</code> describe</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">describe</span>(<span class="pl-s"><span class="pl-pds">'</span>${1:description}<span class="pl-pds">'</span></span>, () <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="its-synchronous-it" class="anchor" href="#its-synchronous-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>its⇥</code> synchronous "it"</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">it</span>(<span class="pl-s"><span class="pl-pds">'</span>${1:description}<span class="pl-pds">'</span></span>, () <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="ita-asynchronous-it" class="anchor" href="#ita-asynchronous-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ita⇥</code> asynchronous "it"</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">it</span>(<span class="pl-s"><span class="pl-pds">'</span>${1:description}<span class="pl-pds">'</span></span>, (<span class="pl-smi">done</span>) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="bef-before" class="anchor" href="#bef-before" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>bef⇥</code> before</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">before</span>(() <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="befe-beforeeach" class="anchor" href="#befe-beforeeach" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>befe⇥</code> beforeEach</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">beforeEach</span>(() <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="aft-after" class="anchor" href="#aft-after" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>aft⇥</code> after</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">after</span>(() <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="afte-aftereach" class="anchor" href="#afte-aftereach" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>afte⇥</code> afterEach</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">afterEach</span>(() <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h3>
+<a id="console" class="anchor" href="#console" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Console</h3>
+
+<h4>
+<a id="cl-consolelog" class="anchor" href="#cl-consolelog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>cl⇥</code> console.log</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>${1:title}<span class="pl-pds">'</span></span>, ${<span class="pl-c1">2</span><span class="pl-k">:</span>$1}$0);</pre></div>
+
+<h4>
+<a id="cll-consolelog-text-only" class="anchor" href="#cll-consolelog-text-only" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>cll⇥</code> console.log (text only)</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">console</span>.<span class="pl-c1">log</span>(${<span class="pl-c1">0</span>});</pre></div>
+
+<h4>
+<a id="ce-consoleerror" class="anchor" href="#ce-consoleerror" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ce⇥</code> console.error</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">console</span>.<span class="pl-c1">error</span>(${<span class="pl-c1">0</span>});</pre></div>
+
+<h4>
+<a id="cw-consolewarn" class="anchor" href="#cw-consolewarn" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>cw⇥</code> console.warn</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">console</span>.<span class="pl-c1">warn</span>(${<span class="pl-c1">0</span>});</pre></div>
+
+<h3>
+<a id="timers" class="anchor" href="#timers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Timers</h3>
+
+<h4>
+<a id="st-settimeout" class="anchor" href="#st-settimeout" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>st⇥</code> setTimeout</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c1">setTimeout</span>(() <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+}, ${<span class="pl-c1">1</span><span class="pl-k">:</span>delay});</pre></div>
+
+<h4>
+<a id="si-setinterval" class="anchor" href="#si-setinterval" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>si⇥</code> setInterval</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c1">setTimeout</span>(() <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+}, ${<span class="pl-c1">1</span><span class="pl-k">:</span>delay});</pre></div>
+
+<h4>
+<a id="sim-setinterval" class="anchor" href="#sim-setinterval" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>sim⇥</code> setInterval</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">setImmediate</span>(() <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h3>
+<a id="dom-specifics" class="anchor" href="#dom-specifics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DOM specifics</h3>
+
+<h4>
+<a id="ae-addeventlistener" class="anchor" href="#ae-addeventlistener" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ae⇥</code> addEventListener</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-en">addEventListener</span>(<span class="pl-s"><span class="pl-pds">'</span>${2:event}<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">e</span>) {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h4>
+<a id="ga-getattribute" class="anchor" href="#ga-getattribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ga⇥</code> getAttribute</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-c1">getAttribute</span>(<span class="pl-s"><span class="pl-pds">'</span>${2:id}<span class="pl-pds">'</span></span>)</pre></div>
+
+<h4>
+<a id="ra-removeattribute" class="anchor" href="#ra-removeattribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ra⇥</code> removeAttribute</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-en">removeAttribute</span>(<span class="pl-s"><span class="pl-pds">'</span>${2:attr}<span class="pl-pds">'</span></span>);</pre></div>
+
+<h4>
+<a id="ac-appendchild" class="anchor" href="#ac-appendchild" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ac⇥</code> appendChild</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-c1">appendChild</span>(${<span class="pl-c1">2</span><span class="pl-k">:</span>elem});</pre></div>
+
+<h4>
+<a id="rc-removechild" class="anchor" href="#rc-removechild" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>rc⇥</code> removeChild</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-en">removeChild</span>(${<span class="pl-c1">2</span><span class="pl-k">:</span>elem});</pre></div>
+
+<h4>
+<a id="gi-getelementbyid" class="anchor" href="#gi-getelementbyid" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>gi⇥</code> getElementById</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>${2:id}<span class="pl-pds">'</span></span>)</pre></div>
+
+<h4>
+<a id="gc-getelementsbyclassname" class="anchor" href="#gc-getelementsbyclassname" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>gc⇥</code> getElementsByClassName</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c1">Array</span>.<span class="pl-en">from</span>(${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-en">getElementsByClassName</span>(<span class="pl-s"><span class="pl-pds">'</span>${2:class}<span class="pl-pds">'</span></span>))</pre></div>
+
+<p><code>Array.from</code> polyfill required for ES5</p>
+
+<h4>
+<a id="gt-getelementsbytagname" class="anchor" href="#gt-getelementsbytagname" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>gt⇥</code> getElementsByTagName</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c1">Array</span>.<span class="pl-en">from</span>(${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-c1">getElementsByTagName</span>(<span class="pl-s"><span class="pl-pds">'</span>${2:tag}<span class="pl-pds">'</span></span>))</pre></div>
+
+<p><code>Array.from</code> polyfill required for ES5</p>
+
+<h4>
+<a id="qs-queryselector" class="anchor" href="#qs-queryselector" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>qs⇥</code> querySelector</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-en">querySelector</span>(<span class="pl-s"><span class="pl-pds">'</span>${2:selector}<span class="pl-pds">'</span></span>)</pre></div>
+
+<h4>
+<a id="qsa-queryselectorall" class="anchor" href="#qsa-queryselectorall" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>qsa⇥</code> querySelectorAll</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c1">Array</span>.<span class="pl-en">from</span>(${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-en">querySelectorAll</span>(<span class="pl-s"><span class="pl-pds">'</span>${2:selector}<span class="pl-pds">'</span></span>))</pre></div>
+
+<p><code>Array.from</code> polyfill required for ES5</p>
+
+<h3>
+<a id="nodejs-specifics" class="anchor" href="#nodejs-specifics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Node.js specifics</h3>
+
+<h4>
+<a id="cb-nodejs-style-callback" class="anchor" href="#cb-nodejs-style-callback" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>cb⇥</code> Node.js style callback</h4>
+
+<div class="highlight highlight-source-js"><pre>(<span class="pl-smi">err$</span>{<span class="pl-c1">1</span><span class="pl-k">:</span>, value}) <span class="pl-k">=&gt;</span> {${<span class="pl-c1">0</span>}}</pre></div>
+
+<h4>
+<a id="re-require-a-module" class="anchor" href="#re-require-a-module" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>re⇥</code> require a module</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>${1:module}<span class="pl-pds">'</span></span>);</pre></div>
+
+<h4>
+<a id="em-export-member" class="anchor" href="#em-export-member" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>em⇥</code> export member</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c1">exports</span>.<span class="pl-smi">$</span>{<span class="pl-c1">1</span><span class="pl-k">:</span>name} <span class="pl-k">=</span> ${<span class="pl-c1">2</span><span class="pl-k">:</span>value};</pre></div>
+
+<h4>
+<a id="me-moduleexports" class="anchor" href="#me-moduleexports" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>me⇥</code> module.exports</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> ${<span class="pl-c1">1</span><span class="pl-k">:</span>name};</pre></div>
+
+<h4>
+<a id="on-attach-an-event-handler-chainable" class="anchor" href="#on-attach-an-event-handler-chainable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>on⇥</code> attach an event handler (chainable)</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span>emitter}.<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">'</span>${2:event}<span class="pl-pds">'</span></span>, (<span class="pl-smi">$</span>{<span class="pl-c1">3</span><span class="pl-k">:</span><span class="pl-v">arguments</span>}) <span class="pl-k">=&gt;</span> {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h3>
+<a id="miscellaneous" class="anchor" href="#miscellaneous" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Miscellaneous</h3>
+
+<h4>
+<a id="us-use-strict" class="anchor" href="#us-use-strict" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>us⇥</code> use strict</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-s"><span class="pl-pds">'</span>use strict<span class="pl-pds">'</span></span>;</pre></div>
+
+<h3>
+<a id="express-snippets" class="anchor" href="#express-snippets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>express snippets</h3>
+
+<h4>
+<a id="ae-addeventlistener-1" class="anchor" href="#ae-addeventlistener-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>ae⇥</code> addEventListener</h4>
+
+<div class="highlight highlight-source-js"><pre>${<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">document</span>}.<span class="pl-en">addEventListener</span>(<span class="pl-s"><span class="pl-pds">'</span>${2:event}<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">e</span>) {
+  ${<span class="pl-c1">0</span>}
+});</pre></div>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<p>The MIT License (MIT)</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/maochunguang/best-js-snippets">Best-js-snippets</a> is maintained by <a href="https://github.com/maochunguang">maochunguang</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
