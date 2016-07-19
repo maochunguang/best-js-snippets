@@ -492,11 +492,13 @@ afterEach(() => {
 
 ### Console
 
-#### `cl⇥`,`cll⇥` , `ce⇥`,`cw⇥`  console.log
+#### `cl⇥`,`cll⇥`, `ce⇥`,`ct⇥`,`cte⇥`,`cw⇥`  console.log
 ```js
 console.log('${1:title}', ${2:$1}$0);
 console.log(${0});
 console.error(${0});
+console.time(${0});
+console.timeEnd(${0});
 console.warn(${0});
 ```
 
