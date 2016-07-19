@@ -1,14 +1,19 @@
 {
     "name": "best-js-snippets",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "description": "js and nodejs snippets",
     "keywords": [
-        "Javascript", "snippets", "nodejs", "es6","express"
+        "Javascript", "snippets", "nodejs", "es6", "express"
     ],
     "repository": "https://github.com/maochunguang/best-js-snippets",
+    "homepage": "http://geekwalker.cn/best-js-snippets/",
     "license": "MIT",
     "engines": {
         "atom": ">=1.0.0 <2.0.0"
     },
-    "author": "tommy"
+    "author": "tommy",
+    "dependencies": {
+
+    }
+
 }

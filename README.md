@@ -1,11 +1,6 @@
 ## best-js-snippets package
 this is the best **atom snippets** of js that include **es6**, **express** ,**String**, **nodejs-fs**,**nodejs-utils** ,**dom**, and so on.
 
-## how to use this snippets
-1. `cd ~/.atom/package`
-2. `git clone https://github.com/maochunguang/best-js-snippets.git best-js-snippets`
-3. restart atom and enjoy !
-
 *Note: this is a fork of [turbo-javascript](extrabacon/atom-turbo-javascript) that uses arrow functions by default and adds  more snippets for express,node-fs,dom-child and so on.*
 
 ### Express snippets
