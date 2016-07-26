@@ -27,6 +27,55 @@
 <p><em>Note: this is a fork of <a href="extrabacon/atom-turbo-javascript">turbo-javascript</a> that uses arrow functions by default and adds  more snippets for express,node-fs,dom-child and so on.</em></p>
 
 <h3>
+<a id="special-statement" class="anchor" href="#special-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>special statement</h3>
+
+<p><em>Note: the most common modules I use the shorCut to improve efficiency,but some uncommon modules are not necessary for us.So,I decided to use fullName to autocomplete uncommon modules .</em></p>
+
+<h3>
+<a id="nodejs-assert-snippets" class="anchor" href="#nodejs-assert-snippets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>nodejs-assert snippets</h3>
+
+<h4>
+<a id="assert" class="anchor" href="#assert" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>assert.⇥</code>
+</h4>
+
+<pre><code>assert.equal(${1:actual}, ${2:expected});
+assert.notEqual(${1:actual}, ${2:expected});
+assert.ok(${1:actual});
+assert.ifError(${1:actual});
+
+// and so on
+</code></pre>
+
+<h3>
+<a id="nodejs-process-snippets" class="anchor" href="#nodejs-process-snippets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>nodejs-process snippets</h3>
+
+<h4>
+<a id="process" class="anchor" href="#process" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>process.⇥</code>
+</h4>
+
+<pre><code>process.abort()
+process.arch
+process.uptime()
+
+// and so on
+</code></pre>
+
+<h3>
+<a id="nodejs-path-snippets" class="anchor" href="#nodejs-path-snippets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>nodejs-path snippets</h3>
+
+<h4>
+<a id="path" class="anchor" href="#path" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>path.⇥</code>
+</h4>
+
+<pre><code>path.basename('${1:pathname}')
+path.dirname('${1:pathname}')
+path.format(${1:pathname})
+path.join('${1:pathname}','${2:name}')
+path.parse(${1:pathname})
+// and so on
+</code></pre>
+
+<h3>
 <a id="express-snippets" class="anchor" href="#express-snippets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Express snippets</h3>
 
 <h4>
