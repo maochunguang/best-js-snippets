@@ -3,6 +3,43 @@ this is the best **atom snippets** of js that include **es6**, **express** ,**St
 
 *Note: this is a fork of [turbo-javascript](extrabacon/atom-turbo-javascript) that uses arrow functions by default and adds  more snippets for express,node-fs,dom-child and so on.*
 
+### special statement
+*Note: the most common modules I use the shorCut to improve efficiency,but some uncommon modules are not necessary for us.So,I decided to use fullName to autocomplete uncommon modules .*
+
+### nodejs-assert snippets
+
+#### `assert.⇥`
+```
+assert.equal(${1:actual}, ${2:expected});
+assert.notEqual(${1:actual}, ${2:expected});
+assert.ok(${1:actual});
+assert.ifError(${1:actual});
+
+// and so on
+```
+
+### nodejs-process snippets
+
+#### `process.⇥`
+```
+process.abort()
+process.arch
+process.uptime()
+
+// and so on
+```
+### nodejs-path snippets
+
+#### `path.⇥`
+```
+path.basename('${1:pathname}')
+path.dirname('${1:pathname}')
+path.format(${1:pathname})
+path.join('${1:pathname}','${2:name}')
+path.parse(${1:pathname})
+// and so on
+```
+
 ### Express snippets
 
 #### `aget⇥`,`apos⇥`,`aall⇥`,`adel⇥`, `aput⇥`
