@@ -1,0 +1,19 @@
+".source.js":
+  "Number.isNaN()":
+    prefix: "Number.isNaN()"
+    body: "Number.isNaN()"
+  "Number.isFinite()":
+    prefix: "Number.isFinite"
+    body: "Number.isFinite()"
+  "Number.isInteger()":
+    prefix: "Number.isInteger"
+    body: "Number.isInteger()"
+  "Number.isSafeInteger()":
+    prefix: "Number.isSafeInteger"
+    body: "Number.isSafeInteger()"
+  "Number.parseFloat()":
+    prefix: "Number.parseFloat"
+    body: "Number.parseFloat(${1:num})"
+  "Number.parseInt()":
+    prefix: "Number.parseInt"
+    body: "Number.parseInt(${1:num})"

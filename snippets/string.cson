@@ -3,68 +3,68 @@
     prefix: "sle"
     body: "${1:str}.length;"
   "string charAt":
-    prefix: "sca"
+    prefix: "charAt"
     body: "${1:value}.charAt(${2:index});"
   "string charCodeAt":
-    prefix: "scca"
+    prefix: "charCodeAt"
     body: "${1:value}.charCodeAt(${2:str});"
   "string concat":
-    prefix: "sco"
+    prefix: "concat"
     body: "${1:str1}.concat(${2:str2});"
   "string includes":
-    prefix: "sic"
+    prefix: "includes"
     body: "${1:str}.includes('${2:str2}');"
   "string indexOf":
-    prefix: "sid"
+    prefix: "indexOf"
     body: "${1:str}.indexOf('${2:str2}');"
   "string lastIndexOf":
-    prefix: "slid"
+    prefix: "lastIndexOf"
     body: "${1:str}.lastIndexOf('${2:str2}');"
   "string startsWith":
-    prefix: "ssw"
+    prefix: "startsWith"
     body: "${1:str}.startsWith('${2:str2}');"
   "string endsWith":
-    prefix: "sew"
+    prefix: "endsWith"
     body: "${1:str}.endsWith('${2:str2}');"
   "string localeCompare":
-    prefix: "slc"
+    prefix: "localeCompare"
     body: "${1:str}.localeCompare(${2:str2});"
   "string match":
-    prefix: "smt"
+    prefix: "match"
     body: "${1:str}.match('${2:regx}');"
   "string replace":
-    prefix: "sre"
+    prefix: "replace"
     body: "String.replace(${1:str}, ${2:reg}, '${3:newStr}');"
   "string repeat":
-    prefix: "srp"
+    prefix: "repeat"
     body: "${1:str}.repeat(${2:times});"
   "string search":
-    prefix: "ssr"
+    prefix: "search"
     body: "${1:str}.search(${2:regx});"
   "string slice":
-    prefix: "slic"
+    prefix: "slice"
     body: "${1:str}.slice(${2:begin},${3:end});"
   "string split":
-    prefix: "spt"
+    prefix: "split"
     body: "${1:str}.split('${2:str2}');"
   "string substr":
-    prefix: "sub"
+    prefix: "substr"
     body: "${1:str}.substr(${2:start},${3:length});"
   "string substring":
-    prefix: "sstr"
+    prefix: "substring"
     body: "${1:str}.substring(${2:begin},${3:end});"
   "string toUpperCase":
-    prefix: "stou"
+    prefix: "toUpperCase"
     body: "${1:str}.toUpperCase()"
   "string toLowerCase":
-    prefix: "stol"
+    prefix: "toLowerCase"
     body: "${1:str}.toLowerCase()"
   "string trim":
-    prefix: "strm"
+    prefix: "trim"
     body: "${1:str}.trim()"
   "string toString":
-    prefix: "stos"
+    prefix: "toString"
     body: "${1:str}.toString()"
   "string valueOf":
-    prefix: "sv"
+    prefix: "valueOf"
     body: "${1:str}.valueOf()"

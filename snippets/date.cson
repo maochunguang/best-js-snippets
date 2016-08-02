@@ -1,0 +1,13 @@
+".source.js":
+  "new Date":
+    prefix: "nd"
+    body: "new Date(${2:value})"
+  "Date.now()":
+    prefix: "Date.now"
+    body: "Date.now()"
+  "Date.parse()":
+    prefix: "Date.parse"
+    body: "Date.parse(${1:value})"
+  "Date.UTC()":
+    prefix: "Date.UTC"
+    body: "Date.UTC()"

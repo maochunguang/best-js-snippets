@@ -20,6 +20,20 @@
     \t${0}
     });
     """
+  "it only":
+    prefix: "ito"
+    body: """
+    it.only('${1:description}', () => {
+    \t${0}
+    });
+    """
+  "it skip":
+    prefix: "itsk"
+    body: """
+    it.skip('${1:description}', () => {
+    \t${0}
+    });
+    """
   "before":
     prefix: "bef"
     body: """

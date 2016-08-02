@@ -1,0 +1,25 @@
+".source.js":
+  "Math.abs(x)":
+    prefix: "Math.abs"
+    body: "Math.abs(${1:value})"
+  "Math.ceil(x)":
+    prefix: "Math.ceil"
+    body: "Math.ceil(${1:value})"
+  "Math.floor(x)":
+    prefix: "Math.floor"
+    body: "Math.floor(${1:value})"
+  "Math.fround(x)":
+    prefix: "Math.fround"
+    body: "Math.fround(${1:value})"
+  "Math.max(x)":
+    prefix: "Math.max"
+    body: "Math.max(${1:value})"
+  "Math.min(x)":
+    prefix: "Math.min"
+    body: "Math.min(${1:value})"
+  "Math.random(x)":
+    prefix: "Math.random"
+    body: "Math.random()"
+  "Math.round(x)":
+    prefix: "Math.round"
+    body: "Math.round(${1:value})"

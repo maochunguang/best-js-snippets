@@ -6,6 +6,29 @@ this is the best **atom snippets** of js that include **es6**, **express** ,**St
 ### special statement
 *Note: the most common modules I use the shorCut to improve efficiency,but some uncommon modules are not necessary for us.So,I decided to use fullName to autocomplete uncommon modules .*
 
+
+### js-Math snippets
+
+#### `Math.⇥`
+```
+Math.abs(${1:value})
+Math.ceil(${1:value})
+Math.floor(${1:value})
+Math.max(${1:value})
+
+// and so on
+```
+### js-Number snippets
+
+#### `Number.⇥`
+```
+Number.isNaN()
+Number.isFinite()
+Number.parseInt(${1:num})
+
+// and so on
+```
+
 ### nodejs-assert snippets
 
 #### `assert.⇥`
@@ -70,9 +93,7 @@ var ${1:path} = req.path;
 
 ### String snippets
 
-#### `sle⇥`,`sca⇥`,`scca⇥`,`sco⇥`,`sic⇥`,`sid⇥`,`slid⇥`,
-`ssw⇥`,`sew⇥`,`slc⇥`,`smt⇥`,`sre⇥`,`srp⇥`,`ssr⇥`,`lic⇥`,`sub⇥`,`sstr⇥`,`stou⇥`,`stol⇥`,`strm⇥`,`stos⇥`
-string method
+#### `sle⇥`,`chat⇥`,`charCodeAt⇥`,`includes⇥`,an so on,**method fullName**  string method
 ```js
 ${1:value}.length;
 ${1:value}.charAt(${2:index});
@@ -637,3 +658,4 @@ ${1:emitter}.on('${2:event}', (${3:arguments}) => {
 # License
 
 The MIT License (MIT)
+Copyright (c) 2016 maochunguang
