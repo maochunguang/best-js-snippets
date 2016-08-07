@@ -1,3 +1,11 @@
+### v3.1.0
+1. add lodash Api
+
+### v3.0.0
+1. add js math Api
+
+2. add js number Api
+
 ### v2.3.2
 1. add nodejs assert Api
 ```

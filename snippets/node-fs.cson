@@ -1,46 +1,167 @@
 ".source.js":
-  "fs.writeFile":
-    "prefix": "fswrite"
-    "body": """
-    fs.writeFile(${1:filename}, ${2:content});
-    """
-  "fs.writeFileSync":
-    "prefix": "fswrites"
-    "body": """
-    fs.writeFileSync(${1:filename}, ${2:content});
-    """
-  "fs.readFile":
-    "prefix": "fsread"
-    "body": """
-    fs.readFile(${1:filename}, ${2:charset});
-    """
-  "fs.readFileSync":
-    "prefix": "fsreads"
-    "body": """
-    fs.readFileSync(${1:filename}, ${2:charset});
-    """
+  "fs":
+    "prefix": "fs"
+    "body": "const fs = require('fs');"
+  "fs.appendFile":
+    "prefix": "fsappendFile"
+    "body": "fs.appendFile(${1:filename}, ${2:data},${3:callback});"
   "fs.exists":
     "prefix": "fsexists"
-    "body": """
-    fs.exists(${0:filename});
-    """
+    "body": "fs.exists(${0:filename});"
   "fs.existsSync":
     "prefix": "fsexistss"
-    "body": """
-    fs.existsSync(${0:filename});
-    """
+    "body": "fs.existsSync(${0:filename});"
+  "fs.unlink":
+    "prefix": "fsunlink"
+    "body": "fs.unlink(${1:path}, ${2:callback});"
+  "fs.unlinkSync":
+    "prefix": "fsunlinkSync"
+    "body": "fs.unlinkSync(${1:filename});"
+  "fs.rename":
+    "prefix": "fsrename"
+    "body": "fs.rename(${1:filename}, ${2:newName},${3:callback});"
+  "fs.renameSync":
+    "prefix": "fsrenameSync"
+    "body": "fs.renameSync(${1:filename}, ${2:newName});"
+  "fs.watch":
+    "prefix": "fswatch"
+    "body": "fs.watch(${1:path}, ${2:options},${3:callback});"
+  "fs.watchFile":
+    "prefix": "fswatchFile"
+    "body": "fs.watchFile(${1:filename},${2:options}, ${3:listener});"
+  "fs.unwatchFile":
+    "prefix": "fsunwatchFile"
+    "body": "fs.unwatchFile(${1:filename}, ${2:listener});"
+  "fs.chmod":
+    "prefix": "fschmod"
+    "body": "fs.chmod(${1:path}, ${2:mode},${3:callback});"
+  "fs.chmodSync":
+    "prefix": "fschmodSync"
+    "body": "fs.chmodSync(${1:path}, ${2:mode});"
+  "fs.chown":
+    "prefix": "fschown"
+    "body": "fs.chown(${1:path}, ${2:uid},${3:gid},${4:callback});"
+  "fs.close":
+    "prefix": "fsclose"
+    "body": "fs.close(${1:fd}, ${2:callback});"
+  "fs.closeSync":
+    "prefix": "fscloseSync"
+    "body": "fs.closeSync(${1:fd});"
+  "fs.createReadStream":
+    "prefix": "fscreateReadStream"
+    "body": "fs.createReadStream(${1:path}, ${2:options});"
+  "fs.createWriteStream":
+    "prefix": "fscreateWriteStream"
+    "body": "fs.createWriteStream(${1:path}, ${2:options});"
+  "fs.fchmod":
+    "prefix": "fsfchmod"
+    "body": "fs.fchmod(${1:fd}, ${2:mode},${3:callback});"
+  "fs.fchmodSync":
+    "prefix": "fsfchmodSync"
+    "body": "fs.fchmodSync(${1:fd}, ${2:mode});"
+  "fs.fchown":
+    "prefix": "fsfchown"
+    "body": "fs.fchown(${1:fd}, ${2:uid},${3:gid},${4:callback});"
+  "fs.fchownSync":
+    "prefix": "fsfchownSync"
+    "body": "fs.fchownSync(${1:fd}, ${2:uid},${3:gid});"
+  "fs.fdatasync":
+    "prefix": "fsfdatasync"
+    "body": "fs.fdatasync(${1:fd}, ${2:callback});"
+  "fs.fdatasyncSync":
+    "prefix": "fsfdatasyncSync"
+    "body": "fs.fdatasyncSync(${1:fd});"
+  "fs.link":
+    "prefix": "fslink"
+    "body": "fs.link(${1:srcpath}, ${2:dstpath},${3:callback});"
+  "fs.linkSync":
+    "prefix": "fslinkSync"
+    "body": "fs.linkSync(${1:srcpath}, ${2:dstpath});"
+  "fs.lstat":
+    "prefix": "fslstat"
+    "body": "fs.lstat(${1:path}, ${2:callback});"
+  "fs.lstatSync":
+    "prefix": "fslstatSync"
+    "body": "fs.lstatSync(${1:path});"
+  "fs.mkdir":
+    "prefix": "fsmkdir"
+    "body": "fs.mkdir(${1:path}, ${2:mode},${3:callback});"
+  "fs.mkdirSync":
+    "prefix": "fsmkdirSync"
+    "body": "fs.mkdirSync(${1:path}, ${2:mode});"
+  "fs.mkdtemp":
+    "prefix": "fsmkdtemp"
+    "body": "fs.mkdtemp(${1:prefix}, ${2:callback});"
+  "fs.mkdtempSync":
+    "prefix": "fsmkdtempSync"
+    "body": "fs.mkdtempSync(${1:prefix});"
+  "fs.open":
+    "prefix": "fsopen"
+    "body": "fs.open(${1:path},${2:flag},${3:mode},${4:callback});"
+  "fs.openSync":
+    "prefix": "fsopenSync"
+    "body": "fs.openSync(${1:path},${2:flag},${3:mode});"
+  "fs.readdir":
+    "prefix": "fsreaddir"
+    "body": "fs.readdir(${1:path},${2:option},${3:callback});"
+  "fs.readdirSync":
+    "prefix": "fsreaddirSync"
+    "body": "fs.readdirSync(${1:path}, ${2:option});"
+  "fs.readSync":
+    "prefix": "fsreadSync"
+    "body": "fs.readSync(${1:fd}, ${2:buffer},${3:offset},${4:length},${5:position});"
+  "fs.read":
+    "prefix": "fsread"
+    "body": "fs.read(${1:fd}, ${2:buffer},${3:offset},${4:length},${5:position},${6:callback});"
+  "fs.realpath":
+    "prefix": "fsrealpath"
+    "body": "fs.realpath(${1:filename}, ${2:option},${3:callback});"
+  "fs.realpathSync":
+    "prefix": "fsrealpathSync"
+    "body": "fs.realpathSync(${1:filename}, ${2:option});"
+  "fs.rmdir":
+    "prefix": "fsrmdir"
+    "body": "fs.rmdir(${1:path}, ${2:callback});"
+  "fs.rmdirSync":
+    "prefix": "fsrmdirSync"
+    "body": "fs.rmdirSync(${1:path});"
+  "fs.symlinkSync":
+    "prefix": "fssymlinkSync"
+    "body": "fs.symlinkSync(${1:target}, ${2:path});"
+  "fs.truncate":
+    "prefix": "fstruncate"
+    "body": "fs.truncate(${1:path}, ${2:len},${3:callback});"
+  "fs.truncateSync":
+    "prefix": "fstruncateSync"
+    "body": "fs.truncateSync(${1:path}, ${2:len});"
+
+  "fs.utimes":
+    "prefix": "fsutimes"
+    "body": "fs.utimes(${1:path}, ${2:atime},${3:mtime},${4:callback});"
+  "fs.utimesSync":
+    "prefix": "fsutimesSync"
+    "body": "fs.utimesSync(${1:path}, ${2:atime},${3:mtime});"
+  "fs.write":
+    "prefix": "fswrite"
+    "body": "fs.write(${1:fd}, ${2:offset},${3:length},${4:position},${5:callback});"
+  "fs.writeSync":
+    "prefix": "fswriteSync"
+    "body": "fs.writeSync(${1:path}, ${2:offset},${3:length},${4:position});"
+  "fs.writeFile":
+    "prefix": "fswrite"
+    "body": "fs.writeFile(${1:filename}, ${2:content});"
+  "fs.writeFileSync":
+    "prefix": "fswrites"
+    "body": "fs.writeFileSync(${1:filename}, ${2:content});"
+  "fs.readFile":
+    "prefix": "fsread"
+    "body": "fs.readFile(${1:filename}, ${2:charset},${3:callback});"
+  "fs.readFileSync":
+    "prefix": "fsreads"
+    "body": "fs.readFileSync(${1:filename}, ${2:charset});"
   "fs.stat":
     "prefix": "fsstat"
-    "body": """
-    fs.stat(${0:filename});
-    """
+    "body": "fs.stat(${0:filename},${2:callback});"
   "fs.statSync":
     "prefix": "fsstats"
-    "body": """
-    fs.statSync(${0:filename});
-    """
-  "path.join":
-    "prefix": "pjoin"
-    "body": """
-    path.join(${1:dir}, ${2:file});
-    """
+    "body": "fs.statSync(${0:filename});"

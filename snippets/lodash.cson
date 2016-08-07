@@ -1,0 +1,176 @@
+".source.js":
+    "_.chunk()":
+        prefix: "_chunk"
+        body: "_.chunk(${1:array},${2:size});"
+    "_.compact()":
+        prefix: "_compact"
+        body: "_.compact(${1:array},${2:size});"
+    "_.concat()":
+        prefix: "_concat"
+        body: "_.concat(${1:array},${2:array2});"
+    "_.difference()":
+        prefix: "_difference"
+        body: "_.difference(${1:array},${2:array2});"
+    "_.differenceBy()":
+        prefix: "_differenceBy"
+        body: "_.differenceBy(${1:array},${2:array2},${3:fiter});"
+    "_.differenceWith()":
+        prefix: "_differenceWith"
+        body: "_.differenceWith(${1:array},${2:array2},${3:fiter});"
+    "_.drop()":
+        prefix: "_drop"
+        body: "_.drop(${1:array},${2:size});"
+    "_.dropRight()":
+        prefix: "_dropRight"
+        body: "_.dropRight(${1:array},${2:size});"
+    "_.dropRightWhile()":
+        prefix: "_dropRightWhile"
+        body: "_.dropRightWhile(${1:array},${2:size});"
+    "_.dropWhile()":
+        prefix: "_dropWhile"
+        body: "_.dropWhile(${1:array},${2:size});"
+    "_.fill()":
+        prefix: "_fill"
+        body: "_.fill(${1:array},${2:value},${3:start},${4:end});"
+    "_.findIndex()":
+        prefix: "_findIndex"
+        body: "_.findIndex(${1:array},${2:value},${3:fromIndex});"
+    "_.findLastIndex()":
+        prefix: "_findLastIndex"
+        body: "_.findLastIndex(${1:array},${2:value},${3:fromLastIndex});"
+    "_.flatten()":
+        prefix: "_flatten"
+        body: "_.flatten(${1:array});"
+    "_.flattenDeep()":
+        prefix: "_flattenDeep"
+        body: "_.flattenDeep(${1:array});"
+    "_.flattenDepth()":
+        prefix: "_flattenDepth"
+        body: "_.flattenDepth(${1:array},${2:depth});"
+    "_.fromPairs()":
+        prefix: "_fromPairs"
+        body: "_.fromPairs(${1:value1},${2:value2});"
+    "_.flatten()":
+        prefix: "_flatten"
+        body: "_.flatten(${1:array});"
+    "_.indexOf()":
+        prefix: "_indexOf"
+        body: "_.indexOf(${1:array},${2:value},{3:fromIndex});"
+    "_.initial()":
+        prefix: "_initial"
+        body: "_.initial(${1:array});"
+    "_.intersection()":
+        prefix: "_intersection"
+        body: "_.intersection(${1:array},${2:array2});"
+    "_.intersectionBy()":
+        prefix: "_intersectionBy"
+        body: "_.intersectionBy(${1:array}),${2:array2},${3:filter});"
+    "_.intersectionWith()":
+        prefix: "_intersectionWith"
+        body: "_.intersectionWith(${1:array}),${2:array2},${3:filter});"
+    "_.join()":
+        prefix: "_join"
+        body: "_.join(${1:array},${2:separator});"
+    "_.last()":
+        prefix: "_last"
+        body: "_.last(${1:array});"
+    "_.lastIndexOf()":
+        prefix: "_lastIndexOf"
+        body: "_.lastIndexOf(${1:array},${2:value},${3:fromIndex});"
+    "_.nth()":
+        prefix: "_nth"
+        body: "_.nth(${1:array},${2:index});"
+    "_.pull()":
+        prefix: "_pull"
+        body: "_.pull(${1:array},${2:value});"
+    "_.pullAll()":
+        prefix: "_pullAll"
+        body: "_.pullAll(${1:array},${2:values});"
+    "_.pullAllBy()":
+        prefix: "_pullAllBy"
+        body: "_.pullAllBy(${1:array},${2:values},${3:filter});"
+    "_.pullAllWith()":
+        prefix: "_pullAllWith"
+        body: "_.pullAllWith(${1:array},${2:values},${3:filter});"
+    "_.pullAt()":
+        prefix: "_pullAt"
+        body: "_.pullAt(${1:array},${2:index});"
+    "_.remove()":
+        prefix: "_remove"
+        body: "_.remove(${1:array},${2:filter});"
+    "_.reverse()":
+        prefix: "_reverse"
+        body: "_.reverse(${1:array});"
+    "_.slice()":
+        prefix: "_slice"
+        body: "_.slice(${1:array},${2:start},${3:end});"
+    "_.sortedIndex()":
+        prefix: "_sortedIndex"
+        body: "_.sortedIndex(${1:array},${2:value});"
+    "_.sortedIndexBy()":
+        prefix: "_sortedIndexBy"
+        body: "_.sortedIndexBy(${1:array},${2:value},${3:filter});"
+    "_.sortedIndexOf()":
+        prefix: "_sortedIndexOf"
+        body: "_.sortedIndexOf(${1:array},${2:value});"
+    "_.sortedLastIndex()":
+        prefix: "_sortedLastIndex"
+        body: "_.sortedLastIndex(${1:array},${2:value});"
+    "_.sortedLastIndexBy()":
+        prefix: "_sortedLastIndexBy"
+        body: "_.sortedLastIndexBy(${1:array},${2:value},${3:filter});"
+    "_.sortedLastIndexOf()":
+        prefix: "_sortedLastIndexOf"
+        body: "_.sortedLastIndexOf(${1:array},${2:value});"
+    "_.sortedUniq()":
+        prefix: "_sortedUniq"
+        body: "_.sortedUniq(${1:array});"
+    "_.sortedUniqBy()":
+        prefix: "_sortedUniqBy"
+        body: "_.sortedUniqBy(${1:array},${2:filter});"
+
+    "_.tail()":
+        prefix: "_tail"
+        body: "_.tail(${1:array});"
+    "_.take()":
+        prefix: "_take"
+        body: "_.take(${1:array},${2:start});"
+    "_.takeRight()":
+        prefix: "_takeRight"
+        body: "_.takeRight(${1:array},${2:start});"
+    "_.takeRightWhile()":
+        prefix: "_takeRightWhile"
+        body: "_.takeRightWhile(${1:array},${2:filter});"
+    "_.takeWhile()":
+        prefix: "_takeWhile"
+        body: "_.takeWhile(${1:array},${2:filter});"
+    "_.union()":
+        prefix: "_union"
+        body: "_.union(${1:array},${2:array2});"
+    "_.unionBy()":
+        prefix: "_unionBy"
+        body: "_.unionBy(${1:array},${2:array2},${3:filter});"
+    "_.unionWith()":
+        prefix: "_unionWith"
+        body: "_.unionWith(${1:array},${2:array2},${3:filter});"
+    "_.uniq()":
+        prefix: "_uniq"
+        body: "_.uniq(${1:array});"
+    "_.uniqBy()":
+        prefix: "_uniqBy"
+        body: "_.uniqBy(${1:array},${2:filter});"
+    "_.uniqWith()":
+        prefix: "_uniqWith"
+        body: "_.uniqWith(${1:array},${2:filter});"
+    "_.unzip()":
+        prefix: "_unzip"
+        body: "_.unzip(${1:array});"
+    "_.unzipWith()":
+        prefix: "_unzipWith"
+        body: "_.unzipWith(${1:array},${2:value});"
+    "_.without()":
+        prefix: "_without"
+        body: "_.without(${1:array},${2:value});"
+    "_.sortedUniqBy()":
+        prefix: "_sortedUniqBy"
+        body: "_.sortedUniqBy(${1:array},${2:filter});"
