@@ -6,6 +6,16 @@ this is the best **atom snippets** of js that include **es6**, **express** ,**St
 ### special statement
 *Note: the most common modules I use the shorCut to improve efficiency,but some uncommon modules are not necessary for us.So,I decided to use fullName to autocomplete uncommon modules .*
 
+### lodash snippets
+
+#### `_chunk⇥`,`_concat⇥` ,`_drop⇥`and so on
+```
+_.chunk(${1:array},${2:size});
+_.concat(${1:array},${2:array2});
+_.drop(${1:array},${2:size});
+
+// and so on
+```
 
 ### js-Math snippets
 

@@ -1,6 +1,7 @@
 ### v3.1.0
 1. add lodash Api
-
+2. add more node-fs Api
+3. modify some express Api 
 ### v3.0.0
 1. add js math Api
 
