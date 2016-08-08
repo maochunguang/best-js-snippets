@@ -1,7 +1,13 @@
+### v4.0.0
+1. add os Api
+2. add http and https Api
+3. add dns and stream Api
+4. add queryString Api
+
 ### v3.1.0
 1. add lodash Api
 2. add more node-fs Api
-3. modify some express Api 
+3. modify some express Api
 ### v3.0.0
 1. add js math Api
 

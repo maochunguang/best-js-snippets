@@ -1,0 +1,46 @@
+".source.js":
+	"dns.lookup(hostname, options, callback);":
+		prefix: "dns.lookup(hostname, options, callback);"
+		body: "dns.lookup(${1:hostname}, ${2:options}, ${3:callback});"
+	"dns.lookupService(host, port, callback);":
+		prefix: "dns.lookupService(host, port, callback);"
+		body: "dns.lookupService(${1:host}, ${2:port}, ${3:callback});"
+	"dns.resolve4(name, callback);":
+		prefix: "dns.resolve4(name, callback);"
+		body: "dns.resolve4(${1:name}, ${2:callback});"
+	"dns.resolve6(name, callback);":
+		prefix: "dns.resolve6(name, callback);"
+		body: "dns.resolve6(${1:name}, ${2:callback});"
+	"dns.resolveCname(name, callback);":
+		prefix: "dns.resolveCname(name, callback);"
+		body: "dns.resolveCname(${1:name}, ${2:callback});"
+	"dns.resolveMx(name, callback);":
+		prefix: "dns.resolveMx(name, callback);"
+		body: "dns.resolveMx(${1:name}, ${2:callback});"
+	"dns.resolveNs(name, callback);":
+		prefix: "dns.resolveNs(name, callback);"
+		body: "dns.resolveNs(${1:name}, ${2:callback});"
+	"dns.resolveTxt(name, callback);":
+		prefix: "dns.resolveTxt(name, callback);"
+		body: "dns.resolveTxt(${1:name}, ${2:callback});"
+	"dns.resolveSrv(name, callback);":
+		prefix: "dns.resolveSrv(name, callback);"
+		body: "dns.resolveSrv(${1:name}, ${2:callback});"
+	"dns.resolveNaptr(name, callback);":
+		prefix: "dns.resolveNaptr(name, callback);"
+		body: "dns.resolveNaptr(${1:name}, ${2:callback});"
+	"dns.resolveSoa(name, callback);":
+		prefix: "dns.resolveSoa(name, callback);"
+		body: "dns.resolveSoa(${1:name}, ${2:callback});"
+	"dns.reverse(name, callback);":
+		prefix: "dns.reverse(name, callback);"
+		body: "dns.reverse(${1:name}, ${2:callback});"
+	"dns.resolve(hostname, type_, callback_);":
+		prefix: "dns.resolve(hostname, type_, callback_);"
+		body: "dns.resolve(${1:hostname}, ${2:type_}, ${3:callback_});"
+	"dns.getServers();":
+		prefix: "dns.getServers();"
+		body: "dns.getServers();"
+	"dns.setServers(servers);":
+		prefix: "dns.setServers(servers);"
+		body: "dns.setServers(${1:servers});"

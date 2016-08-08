@@ -8,7 +8,6 @@
   "assert.deepEqual":
     prefix: "assert.deepEqual"
     body: "assert.deepEqual(${1:actual}, ${2:expected});"
-
   "assert.ok()":
     prefix: "assert.ok"
     body: "assert.ok(${1:actual});"

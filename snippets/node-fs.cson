@@ -134,7 +134,6 @@
   "fs.truncateSync":
     "prefix": "fstruncateSync"
     "body": "fs.truncateSync(${1:path}, ${2:len});"
-
   "fs.utimes":
     "prefix": "fsutimes"
     "body": "fs.utimes(${1:path}, ${2:atime},${3:mtime},${4:callback});"

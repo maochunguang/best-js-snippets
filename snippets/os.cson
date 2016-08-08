@@ -1,0 +1,49 @@
+".source.js":
+	"os.hostname();":
+		prefix: "os.hostname();"
+		body: "os.hostname();$0"
+	"os.loadavg();":
+		prefix: "os.loadavg();"
+		body: "os.loadavg();$0"
+	"os.uptime();":
+		prefix: "os.uptime();"
+		body: "os.uptime();$0"
+	"os.freemem();":
+		prefix: "os.freemem();"
+		body: "os.freemem();$0"
+	"os.totalmem();":
+		prefix: "os.totalmem();"
+		body: "os.totalmem();$0"
+	"os.cpus();":
+		prefix: "os.cpus();"
+		body: "os.cpus();$0"
+	"os.type();":
+		prefix: "os.type();"
+		body: "os.type();$0"
+	"os.release();":
+		prefix: "os.release();"
+		body: "os.release();$0"
+	"os.networkInterfaces();":
+		prefix: "os.networkInterfaces();"
+		body: "os.networkInterfaces();$0"
+	"os.homedir();":
+		prefix: "os.homedir();"
+		body: "os.homedir();$0"
+	"os.arch();":
+		prefix: "os.arch();"
+		body: "os.arch();$0"
+	"os.platform();":
+		prefix: "os.platform();"
+		body: "os.platform();$0"
+	"os.tmpdir();":
+		prefix: "os.tmpdir();"
+		body: "os.tmpdir();$0"
+	"os.tmpDir();":
+		prefix: "os.tmpDir();"
+		body: "os.tmpDir();$0"
+	"os.getNetworkInterfaces();":
+		prefix: "os.getNetworkInterfaces();"
+		body: "os.getNetworkInterfaces();$0"
+	"os.endianness();":
+		prefix: "os.endianness();"
+		body: "os.endianness();$0"

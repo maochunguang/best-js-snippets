@@ -1,0 +1,88 @@
+".source.js":
+	"http.IncomingMessage(socket);":
+		prefix: "http.IncomingMessage(socket);"
+		body: "http.IncomingMessage(${1:socket});"
+	"http.OutgoingMessage();":
+		prefix: "http.OutgoingMessage();"
+		body: "http.OutgoingMessage();"
+	"http.ServerResponse(req);":
+		prefix: "http.ServerResponse(req);"
+		body: "http.ServerResponse(${1:req});"
+	"http.Agent(options);":
+		prefix: "http.Agent(options);"
+		body: "http.Agent(${1:options});"
+	"http.ClientRequest(options, cb);":
+		prefix: "http.ClientRequest(options, cb);"
+		body: "http.ClientRequest(${1:options}, ${2:cb});"
+	"http.request(options, cb);":
+		prefix: "http.request(options, cb);"
+		body: "http.request(${1:options}, ${2:cb});"
+	"http.get(options, cb);":
+		prefix: "http.get(options, cb);"
+		body: "http.get(${1:options}, ${2:cb});"
+	"http._connectionListener(socket);":
+		prefix: "http._connectionListener(socket);"
+		body: "http._connectionListener(${1:socket});"
+	"http.Server(requestListener);":
+		prefix: "http.Server(requestListener);"
+		body: "http.Server(${1:requestListener});"
+	"http.createServer(requestListener);":
+		prefix: "http.createServer(requestListener);"
+		body: "http.createServer(${1:requestListener});"
+	"http.Client();":
+		prefix: "http.Client();"
+		body: "http.Client();"
+	"http.createClient();":
+		prefix: "http.createClient();"
+		body: "http.createClient();"
+	"https.Server(opts, requestListener);":
+		prefix: "https.Server(opts, requestListener);"
+		body: "https.Server(${1:opts}, ${2:requestListener});"
+	"https.createServer(opts, requestListener);":
+		prefix: "https.createServer(opts, requestListener);"
+		body: "https.createServer(${1:opts}, ${2:requestListener});"
+	"https.Agent(options);":
+		prefix: "https.Agent(options);"
+		body: "https.Agent(${1:options});"
+	"https.request(options, cb);":
+		prefix: "https.request(options, cb);"
+		body: "https.request(${1:options}, ${2:cb});"
+	"https.get(options, cb);":
+		prefix: "https.get(options, cb);"
+		body: "https.get(${1:options}, ${2:cb});"
+	"net.createServer(options, connectionListener);":
+		prefix: "net.createServer(options, connectionListener);"
+		body: "net.createServer(${1:options}, ${2:connectionListener});$0"
+	"net.createConnection();":
+		prefix: "net.createConnection();"
+		body: "net.createConnection();$0"
+	"net.connect();":
+		prefix: "net.connect();"
+		body: "net.connect();$0"
+	"net._normalizeConnectArgs(args);":
+		prefix: "net._normalizeConnectArgs(args);"
+		body: "net._normalizeConnectArgs(${1:args});$0"
+	"net.Socket(options);":
+		prefix: "net.Socket(options);"
+		body: "net.Socket(${1:options});$0"
+	"net.Stream(options);":
+		prefix: "net.Stream(options);"
+		body: "net.Stream(${1:options});$0"
+	"net.Server(options, connectionListener);":
+		prefix: "net.Server(options, connectionListener);"
+		body: "net.Server(${1:options}, ${2:connectionListener});$0"
+	"net._createServerHandle(address, port, addressType, fd);":
+		prefix: "net._createServerHandle(address, port, addressType, fd);"
+		body: "net._createServerHandle(${1:address}, ${2:port}, ${3:addressType}, ${4:fd});$0"
+	"net.isIP();":
+		prefix: "net.isIP();"
+		body: "net.isIP();$0"
+	"net.isIPv4(input);":
+		prefix: "net.isIPv4(input);"
+		body: "net.isIPv4(${1:input});$0"
+	"net.isIPv6(input);":
+		prefix: "net.isIPv6(input);"
+		body: "net.isIPv6(${1:input});$0"
+	"net._setSimultaneousAccepts(handle);":
+		prefix: "net._setSimultaneousAccepts(handle);"
+		body: "net._setSimultaneousAccepts(${1:handle});$0"

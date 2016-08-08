@@ -1,0 +1,85 @@
+".source.js":
+	"querystring.unescapeBuffer(s, decodeSpaces);":
+		prefix: "querystring.unescapeBuffer(s, decodeSpaces);"
+		body: "querystring.unescapeBuffer(${1:s}, ${2:decodeSpaces});$0"
+	"querystring.unescape(s, decodeSpaces);":
+		prefix: "querystring.unescape(s, decodeSpaces);"
+		body: "querystring.unescape(${1:s}, ${2:decodeSpaces});$0"
+	"querystring.escape(str);":
+		prefix: "querystring.escape(str);"
+		body: "querystring.escape(${1:str});$0"
+	"querystring.encode(obj, sep, eq, options);":
+		prefix: "querystring.encode(obj, sep, eq, options);"
+		body: "querystring.encode(${1:obj}, ${2:sep}, ${3:eq}, ${4:options});$0"
+	"querystring.stringify(obj, sep, eq, options);":
+		prefix: "querystring.stringify(obj, sep, eq, options);"
+		body: "querystring.stringify(${1:obj}, ${2:sep}, ${3:eq}, ${4:options});$0"
+	"querystring.decode(qs, sep, eq, options);":
+		prefix: "querystring.decode(qs, sep, eq, options);"
+		body: "querystring.decode(${1:qs}, ${2:sep}, ${3:eq}, ${4:options});$0"
+	"querystring.parse(qs, sep, eq, options);":
+		prefix: "querystring.parse(qs, sep, eq, options);"
+		body: "querystring.parse(${1:qs}, ${2:sep}, ${3:eq}, ${4:options});$0"
+	"readline.createInterface(input, output, completer, terminal);":
+		prefix: "readline.createInterface(input, output, completer, terminal);"
+		body: "readline.createInterface(${1:input}, ${2:output}, ${3:completer}, ${4:terminal});$0"
+	"readline.Interface(input, output, completer, terminal);":
+		prefix: "readline.Interface(input, output, completer, terminal);"
+		body: "readline.Interface(${1:input}, ${2:output}, ${3:completer}, ${4:terminal});$0"
+	"readline.emitKeypressEvents(stream);":
+		prefix: "readline.emitKeypressEvents(stream);"
+		body: "readline.emitKeypressEvents(${1:stream});$0"
+	"readline.cursorTo(stream, x, y);":
+		prefix: "readline.cursorTo(stream, x, y);"
+		body: "readline.cursorTo(${1:stream}, ${2:x}, ${3:y});$0"
+	"readline.moveCursor(stream, dx, dy);":
+		prefix: "readline.moveCursor(stream, dx, dy);"
+		body: "readline.moveCursor(${1:stream}, ${2:dx}, ${3:dy});$0"
+	"readline.clearLine(stream, dir);":
+		prefix: "readline.clearLine(stream, dir);"
+		body: "readline.clearLine(${1:stream}, ${2:dir});$0"
+	"readline.clearScreenDown(stream);":
+		prefix: "readline.clearScreenDown(stream);"
+		body: "readline.clearScreenDown(${1:stream});$0"
+	"readline.getStringWidth(str);":
+		prefix: "readline.getStringWidth(str);"
+		body: "readline.getStringWidth(${1:str});$0"
+	"readline.isFullWidthCodePoint(code);":
+		prefix: "readline.isFullWidthCodePoint(code);"
+		body: "readline.isFullWidthCodePoint(${1:code});$0"
+	"readline.codePointAt();":
+		prefix: "readline.codePointAt();"
+		body: "readline.codePointAt();$0"
+	"readline.stripVTControlCharacters(str);":
+		prefix: "readline.stripVTControlCharacters(str);"
+		body: "readline.stripVTControlCharacters(${1:str});$0"
+	"repl.writer(obj, opts);":
+		prefix: "repl.writer(obj, opts);"
+		body: "repl.writer(${1:obj}, ${2:opts});$0"
+	"repl.REPLServer(prompt, stream, eval_, useGlobal, ignoreUndefined, replMode);":
+		prefix: "repl.REPLServer(prompt, stream, eval_, useGlobal, ignoreUndefined, replMode);"
+		body: "repl.REPLServer(${1:prompt}, ${2: }, ${3:stream}, ${4: }, ${5:eval_}, ${6: }, ${7:useGlobal}, ${8: }, ${9:ignoreUndefined}, ${10: }, ${11:replMode});$0"
+	"repl.start(prompt, source, eval_, useGlobal, ignoreUndefined, replMode);":
+		prefix: "repl.start(prompt, source, eval_, useGlobal, ignoreUndefined, replMode);"
+		body: "repl.start(${1:prompt}, ${2: }, ${3:source}, ${4: }, ${5:eval_}, ${6: }, ${7:useGlobal}, ${8: }, ${9:ignoreUndefined}, ${10: }, ${11:replMode});$0"
+	"stream.super_();":
+		prefix: "stream.super_();"
+		body: "stream.super_();$0"
+	"stream.Readable(options);":
+		prefix: "stream.Readable(options);"
+		body: "stream.Readable(${1:options});$0"
+	"stream.Writable(options);":
+		prefix: "stream.Writable(options);"
+		body: "stream.Writable(${1:options});$0"
+	"stream.Duplex(options);":
+		prefix: "stream.Duplex(options);"
+		body: "stream.Duplex(${1:options});$0"
+	"stream.Transform(options);":
+		prefix: "stream.Transform(options);"
+		body: "stream.Transform(${1:options});$0"
+	"stream.PassThrough(options);":
+		prefix: "stream.PassThrough(options);"
+		body: "stream.PassThrough(${1:options});$0"
+	"stream.Stream();":
+		prefix: "stream.Stream();"
+		body: "stream.Stream();$0"
