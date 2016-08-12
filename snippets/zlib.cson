@@ -1,0 +1,88 @@
+".source.js":
+	"zlib.Zlib()":
+		prefix: "zlib.Zlib()"
+		body: "zlib.Zlib()"
+	"zlib.Deflate(opts)":
+		prefix: "zlib.Deflate(opts)"
+		body: "zlib.Deflate(${1:opts})"
+	"zlib.Inflate(opts)":
+		prefix: "zlib.Inflate(opts)"
+		body: "zlib.Inflate(${1:opts})"
+	"zlib.Gzip(opts)":
+		prefix: "zlib.Gzip(opts)"
+		body: "zlib.Gzip(${1:opts})"
+	"zlib.Gunzip(opts)":
+		prefix: "zlib.Gunzip(opts)"
+		body: "zlib.Gunzip(${1:opts})"
+	"zlib.DeflateRaw(opts)":
+		prefix: "zlib.DeflateRaw(opts)"
+		body: "zlib.DeflateRaw(${1:opts})"
+	"zlib.InflateRaw(opts)":
+		prefix: "zlib.InflateRaw(opts)"
+		body: "zlib.InflateRaw(${1:opts})"
+	"zlib.Unzip(opts)":
+		prefix: "zlib.Unzip(opts)"
+		body: "zlib.Unzip(${1:opts})"
+	"zlib.createDeflate(o)":
+		prefix: "zlib.createDeflate(o)"
+		body: "zlib.createDeflate(${1:o})"
+	"zlib.createInflate(o)":
+		prefix: "zlib.createInflate(o)"
+		body: "zlib.createInflate(${1:o})"
+	"zlib.createDeflateRaw(o)":
+		prefix: "zlib.createDeflateRaw(o)"
+		body: "zlib.createDeflateRaw(${1:o})"
+	"zlib.createInflateRaw(o)":
+		prefix: "zlib.createInflateRaw(o)"
+		body: "zlib.createInflateRaw(${1:o})"
+	"zlib.createGzip(o)":
+		prefix: "zlib.createGzip(o)"
+		body: "zlib.createGzip(${1:o})"
+	"zlib.createGunzip(o)":
+		prefix: "zlib.createGunzip(o)"
+		body: "zlib.createGunzip(${1:o})"
+	"zlib.createUnzip(o)":
+		prefix: "zlib.createUnzip(o)"
+		body: "zlib.createUnzip(${1:o})"
+	"zlib.deflate(buffer, opts, callback)":
+		prefix: "zlib.deflate(buffer, opts, callback)"
+		body: "zlib.deflate(${1:buffer}, ${2:opts}, ${3:callback})"
+	"zlib.deflateSync(buffer, opts)":
+		prefix: "zlib.deflateSync(buffer, opts)"
+		body: "zlib.deflateSync(${1:buffer}, ${2:opts})"
+	"zlib.gzip(buffer, opts, callback)":
+		prefix: "zlib.gzip(buffer, opts, callback)"
+		body: "zlib.gzip(${1:buffer}, ${2:opts}, ${3:callback})"
+	"zlib.gzipSync(buffer, opts)":
+		prefix: "zlib.gzipSync(buffer, opts)"
+		body: "zlib.gzipSync(${1:buffer}, ${2:opts})"
+	"zlib.deflateRaw(buffer, opts, callback)":
+		prefix: "zlib.deflateRaw(buffer, opts, callback)"
+		body: "zlib.deflateRaw(${1:buffer}, ${2:opts}, ${3:callback})"
+	"zlib.deflateRawSync(buffer, opts)":
+		prefix: "zlib.deflateRawSync(buffer, opts)"
+		body: "zlib.deflateRawSync(${1:buffer}, ${2:opts})"
+	"zlib.unzip(buffer, opts, callback)":
+		prefix: "zlib.unzip(buffer, opts, callback)"
+		body: "zlib.unzip(${1:buffer}, ${2:opts}, ${3:callback})"
+	"zlib.unzipSync(buffer, opts)":
+		prefix: "zlib.unzipSync(buffer, opts)"
+		body: "zlib.unzipSync(${1:buffer}, ${2:opts})"
+	"zlib.inflate(buffer, opts, callback)":
+		prefix: "zlib.inflate(buffer, opts, callback)"
+		body: "zlib.inflate(${1:buffer}, ${2:opts}, ${3:callback})"
+	"zlib.inflateSync(buffer, opts)":
+		prefix: "zlib.inflateSync(buffer, opts)"
+		body: "zlib.inflateSync(${1:buffer}, ${2:opts})"
+	"zlib.gunzip(buffer, opts, callback)":
+		prefix: "zlib.gunzip(buffer, opts, callback)"
+		body: "zlib.gunzip(${1:buffer}, ${2:opts}, ${3:callback})"
+	"zlib.gunzipSync(buffer, opts)":
+		prefix: "zlib.gunzipSync(buffer, opts)"
+		body: "zlib.gunzipSync(${1:buffer}, ${2:opts})"
+	"zlib.inflateRaw(buffer, opts, callback)":
+		prefix: "zlib.inflateRaw(buffer, opts, callback)"
+		body: "zlib.inflateRaw(${1:buffer}, ${2:opts}, ${3:callback})"
+	"zlib.inflateRawSync(buffer, opts)":
+		prefix: "zlib.inflateRawSync(buffer, opts)"
+		body: "zlib.inflateRawSync(${1:buffer}, ${2:opts})"

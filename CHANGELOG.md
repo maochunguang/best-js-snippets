@@ -1,3 +1,8 @@
+### v4.1.0
+1. add zlib Api
+2. add v8 Api
+3. add zlib Api
+
 ### v4.0.0
 1. add os Api
 2. add http and https Api

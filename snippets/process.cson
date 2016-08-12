@@ -1,7 +1,7 @@
 ".source.js":
   "process.abort()":
     prefix: "process.abort()"
-    body: "process.abort();"
+    body: "process.abort()"
   "process.arch":
     prefix: "process.arch"
     body: "process.arch"
@@ -10,7 +10,7 @@
     body: "process.argv"
   "process.chdir()":
     prefix: "process.chdir"
-    body: "process.chdir('${1:name}');"
+    body: "process.chdir('${1:name}')"
   "process.config":
     prefix: "process.config"
     body: "process.config"
@@ -22,19 +22,19 @@
     body: "process.cwd()"
   "process.disconnect()":
     prefix: "process.disconnect"
-    body: "process.disconnect();"
+    body: "process.disconnect()"
   "process.env":
     prefix: "process.env"
     body: "process.env"
   "process.emitWarning()":
     prefix: "process.emitWarning"
-    body: "process.emitWarning('${1:processname}');"
+    body: "process.emitWarning('${1:processname}')"
   "process.on()":
     prefix: "process.on"
     body: """
         process.on(${1:name}, (${2:name}) => {
 
-        });
+        })
     """
   "process.execArgv":
     prefix: "process.execArgv"
@@ -44,7 +44,7 @@
     body: "process.execPath"
   "process.exit()":
     prefix: "process.exit"
-    body: "process.exit(${1:code});"
+    body: "process.exit(${1:code})"
   "process.exitCode":
     prefix: "process.exitCode"
     body: "process.exitCode"
@@ -65,7 +65,7 @@
     body: """
         process.nextTick((${1:args}) => {
           ${2:start}
-        });
+        })
     """
   "process.pid":
     prefix: "process.pid"

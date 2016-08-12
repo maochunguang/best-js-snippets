@@ -1,121 +1,121 @@
 ".source.js":
-	"crypto._toBuf(str, encoding);":
-		prefix: "crypto._toBuf(str, encoding);"
-		body: "crypto._toBuf(${1:str}, ${2:encoding});"
-	"crypto.Hash(algorithm, options);":
-		prefix: "crypto.Hash(algorithm, options);"
-		body: "crypto.Hash(${1:algorithm}, ${2:options});"
-	"crypto.createHash(algorithm, options);":
-		prefix: "crypto.createHash(algorithm, options);"
-		body: "crypto.createHash(${1:algorithm}, ${2:options});"
-	"crypto.Hmac(hmac, key, options);":
-		prefix: "crypto.Hmac(hmac, key, options);"
-		body: "crypto.Hmac(${1:hmac}, ${2:key}, ${3:options});"
-	"crypto.createHmac(hmac, key, options);":
-		prefix: "crypto.createHmac(hmac, key, options);"
-		body: "crypto.createHmac(${1:hmac}, ${2:key}, ${3:options});"
-	"crypto.Cipher(cipher, password, options);":
-		prefix: "crypto.Cipher(cipher, password, options);"
-		body: "crypto.Cipher(${1:cipher}, ${2:password}, ${3:options});"
-	"crypto.createCipher(cipher, password, options);":
-		prefix: "crypto.createCipher(cipher, password, options);"
-		body: "crypto.createCipher(${1:cipher}, ${2:password}, ${3:options});"
-	"crypto.Cipheriv(cipher, key, iv, options);":
-		prefix: "crypto.Cipheriv(cipher, key, iv, options);"
-		body: "crypto.Cipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options});"
-	"crypto.createCipheriv(cipher, key, iv, options);":
-		prefix: "crypto.createCipheriv(cipher, key, iv, options);"
-		body: "crypto.createCipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options});"
-	"crypto.Decipher(cipher, password, options);":
-		prefix: "crypto.Decipher(cipher, password, options);"
-		body: "crypto.Decipher(${1:cipher}, ${2:password}, ${3:options});"
-	"crypto.createDecipher(cipher, password, options);":
-		prefix: "crypto.createDecipher(cipher, password, options);"
-		body: "crypto.createDecipher(${1:cipher}, ${2:password}, ${3:options});"
-	"crypto.Decipheriv(cipher, key, iv, options);":
-		prefix: "crypto.Decipheriv(cipher, key, iv, options);"
-		body: "crypto.Decipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options});"
-	"crypto.createDecipheriv(cipher, key, iv, options);":
-		prefix: "crypto.createDecipheriv(cipher, key, iv, options);"
-		body: "crypto.createDecipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options});"
-	"crypto.Sign(algorithm, options);":
-		prefix: "crypto.Sign(algorithm, options);"
-		body: "crypto.Sign(${1:algorithm}, ${2:options});"
-	"crypto.createSign(algorithm, options);":
-		prefix: "crypto.createSign(algorithm, options);"
-		body: "crypto.createSign(${1:algorithm}, ${2:options});"
-	"crypto.Verify(algorithm, options);":
-		prefix: "crypto.Verify(algorithm, options);"
-		body: "crypto.Verify(${1:algorithm}, ${2:options});"
-	"crypto.createVerify(algorithm, options);":
-		prefix: "crypto.createVerify(algorithm, options);"
-		body: "crypto.createVerify(${1:algorithm}, ${2:options});"
-	"crypto.publicEncrypt(options, buffer);":
-		prefix: "crypto.publicEncrypt(options, buffer);"
-		body: "crypto.publicEncrypt(${1:options}, ${2:buffer});"
-	"crypto.publicDecrypt(options, buffer);":
-		prefix: "crypto.publicDecrypt(options, buffer);"
-		body: "crypto.publicDecrypt(${1:options}, ${2:buffer});"
-	"crypto.privateEncrypt(options, buffer);":
-		prefix: "crypto.privateEncrypt(options, buffer);"
-		body: "crypto.privateEncrypt(${1:options}, ${2:buffer});"
-	"crypto.privateDecrypt(options, buffer);":
-		prefix: "crypto.privateDecrypt(options, buffer);"
-		body: "crypto.privateDecrypt(${1:options}, ${2:buffer});"
-	"crypto.DiffieHellman(sizeOrKey, keyEncoding, generator, genEncoding);":
-		prefix: "crypto.DiffieHellman(sizeOrKey, keyEncoding, generator, genEncoding);"
-		body: "crypto.DiffieHellman(${1:sizeOrKey}, ${2:keyEncoding}, ${3:generator}, ${4:genEncoding});"
-	"crypto.createDiffieHellman(sizeOrKey, keyEncoding, generator, genEncoding);":
-		prefix: "crypto.createDiffieHellman(sizeOrKey, keyEncoding, generator, genEncoding);"
-		body: "crypto.createDiffieHellman(${1:sizeOrKey}, ${2:keyEncoding}, ${3:generator}, ${4:genEncoding});"
-	"crypto.getDiffieHellman(name);":
-		prefix: "crypto.getDiffieHellman(name);"
-		body: "crypto.getDiffieHellman(${1:name});"
-	"crypto.createDiffieHellmanGroup(name);":
-		prefix: "crypto.createDiffieHellmanGroup(name);"
-		body: "crypto.createDiffieHellmanGroup(${1:name});"
-	"crypto.DiffieHellmanGroup(name);":
-		prefix: "crypto.DiffieHellmanGroup(name);"
-		body: "crypto.DiffieHellmanGroup(${1:name});"
-	"crypto.createECDH(curve);":
-		prefix: "crypto.createECDH(curve);"
-		body: "crypto.createECDH(${1:curve});"
-	"crypto.pbkdf2(password, salt, iterations, keylen, digest, callback);":
-		prefix: "crypto.pbkdf2(password, salt, iterations, keylen, digest, callback);"
-		body: "crypto.pbkdf2(${1:password}, ${2: }, ${3:salt}, ${4: }, ${5:iterations}, ${6: }, ${7:keylen}, ${8: }, ${9:digest}, ${10: }, ${11:callback});"
-	"crypto.pbkdf2Sync(password, salt, iterations, keylen, digest);":
-		prefix: "crypto.pbkdf2Sync(password, salt, iterations, keylen, digest);"
-		body: "crypto.pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:digest});"
-	"crypto.Certificate();":
-		prefix: "crypto.Certificate();"
-		body: "crypto.Certificate();"
-	"crypto.setEngine(id, flags);":
-		prefix: "crypto.setEngine(id, flags);"
-		body: "crypto.setEngine(${1:id}, ${2:flags});"
-	"crypto.pseudoRandomBytes();":
-		prefix: "crypto.pseudoRandomBytes();"
-		body: "crypto.pseudoRandomBytes();"
-	"crypto.randomBytes();":
-		prefix: "crypto.randomBytes();"
-		body: "crypto.randomBytes();"
-	"crypto.prng();":
-		prefix: "crypto.prng();"
-		body: "crypto.prng();"
-	"crypto.rng();":
-		prefix: "crypto.rng();"
-		body: "crypto.rng();"
-	"crypto.getCiphers();":
-		prefix: "crypto.getCiphers();"
-		body: "crypto.getCiphers();"
-	"crypto.getHashes();":
-		prefix: "crypto.getHashes();"
-		body: "crypto.getHashes();"
-	"crypto.getCurves();":
-		prefix: "crypto.getCurves();"
-		body: "crypto.getCurves();"
-	"crypto.createCredentials(options, context);":
-		prefix: "crypto.createCredentials(options, context);"
-		body: "crypto.createCredentials(${1:options}, ${2:context});"
-	"crypto.Credentials(secureProtocol, flags, context);":
-		prefix: "crypto.Credentials(secureProtocol, flags, context);"
-		body: "crypto.Credentials(${1:secureProtocol}, ${2:flags}, ${3:context});"
+	"crypto._toBuf(str, encoding)":
+		prefix: "crypto._toBuf(str, encoding)"
+		body: "crypto._toBuf(${1:str}, ${2:encoding})"
+	"crypto.Hash(algorithm, options)":
+		prefix: "crypto.Hash(algorithm, options)"
+		body: "crypto.Hash(${1:algorithm}, ${2:options})"
+	"crypto.createHash(algorithm, options)":
+		prefix: "crypto.createHash(algorithm, options)"
+		body: "crypto.createHash(${1:algorithm}, ${2:options})"
+	"crypto.Hmac(hmac, key, options)":
+		prefix: "crypto.Hmac(hmac, key, options)"
+		body: "crypto.Hmac(${1:hmac}, ${2:key}, ${3:options})"
+	"crypto.createHmac(hmac, key, options)":
+		prefix: "crypto.createHmac(hmac, key, options)"
+		body: "crypto.createHmac(${1:hmac}, ${2:key}, ${3:options})"
+	"crypto.Cipher(cipher, password, options)":
+		prefix: "crypto.Cipher(cipher, password, options)"
+		body: "crypto.Cipher(${1:cipher}, ${2:password}, ${3:options})"
+	"crypto.createCipher(cipher, password, options)":
+		prefix: "crypto.createCipher(cipher, password, options)"
+		body: "crypto.createCipher(${1:cipher}, ${2:password}, ${3:options})"
+	"crypto.Cipheriv(cipher, key, iv, options)":
+		prefix: "crypto.Cipheriv(cipher, key, iv, options)"
+		body: "crypto.Cipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options})"
+	"crypto.createCipheriv(cipher, key, iv, options)":
+		prefix: "crypto.createCipheriv(cipher, key, iv, options)"
+		body: "crypto.createCipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options})"
+	"crypto.Decipher(cipher, password, options)":
+		prefix: "crypto.Decipher(cipher, password, options)"
+		body: "crypto.Decipher(${1:cipher}, ${2:password}, ${3:options})"
+	"crypto.createDecipher(cipher, password, options)":
+		prefix: "crypto.createDecipher(cipher, password, options)"
+		body: "crypto.createDecipher(${1:cipher}, ${2:password}, ${3:options})"
+	"crypto.Decipheriv(cipher, key, iv, options)":
+		prefix: "crypto.Decipheriv(cipher, key, iv, options)"
+		body: "crypto.Decipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options})"
+	"crypto.createDecipheriv(cipher, key, iv, options)":
+		prefix: "crypto.createDecipheriv(cipher, key, iv, options)"
+		body: "crypto.createDecipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options})"
+	"crypto.Sign(algorithm, options)":
+		prefix: "crypto.Sign(algorithm, options)"
+		body: "crypto.Sign(${1:algorithm}, ${2:options})"
+	"crypto.createSign(algorithm, options)":
+		prefix: "crypto.createSign(algorithm, options)"
+		body: "crypto.createSign(${1:algorithm}, ${2:options})"
+	"crypto.Verify(algorithm, options)":
+		prefix: "crypto.Verify(algorithm, options)"
+		body: "crypto.Verify(${1:algorithm}, ${2:options})"
+	"crypto.createVerify(algorithm, options)":
+		prefix: "crypto.createVerify(algorithm, options)"
+		body: "crypto.createVerify(${1:algorithm}, ${2:options})"
+	"crypto.publicEncrypt(options, buffer)":
+		prefix: "crypto.publicEncrypt(options, buffer)"
+		body: "crypto.publicEncrypt(${1:options}, ${2:buffer})"
+	"crypto.publicDecrypt(options, buffer)":
+		prefix: "crypto.publicDecrypt(options, buffer)"
+		body: "crypto.publicDecrypt(${1:options}, ${2:buffer})"
+	"crypto.privateEncrypt(options, buffer)":
+		prefix: "crypto.privateEncrypt(options, buffer)"
+		body: "crypto.privateEncrypt(${1:options}, ${2:buffer})"
+	"crypto.privateDecrypt(options, buffer)":
+		prefix: "crypto.privateDecrypt(options, buffer)"
+		body: "crypto.privateDecrypt(${1:options}, ${2:buffer})"
+	"crypto.DiffieHellman(sizeOrKey, keyEncoding, generator, genEncoding)":
+		prefix: "crypto.DiffieHellman(sizeOrKey, keyEncoding, generator, genEncoding)"
+		body: "crypto.DiffieHellman(${1:sizeOrKey}, ${2:keyEncoding}, ${3:generator}, ${4:genEncoding})"
+	"crypto.createDiffieHellman(sizeOrKey, keyEncoding, generator, genEncoding)":
+		prefix: "crypto.createDiffieHellman(sizeOrKey, keyEncoding, generator, genEncoding)"
+		body: "crypto.createDiffieHellman(${1:sizeOrKey}, ${2:keyEncoding}, ${3:generator}, ${4:genEncoding})"
+	"crypto.getDiffieHellman(name)":
+		prefix: "crypto.getDiffieHellman(name)"
+		body: "crypto.getDiffieHellman(${1:name})"
+	"crypto.createDiffieHellmanGroup(name)":
+		prefix: "crypto.createDiffieHellmanGroup(name)"
+		body: "crypto.createDiffieHellmanGroup(${1:name})"
+	"crypto.DiffieHellmanGroup(name)":
+		prefix: "crypto.DiffieHellmanGroup(name)"
+		body: "crypto.DiffieHellmanGroup(${1:name})"
+	"crypto.createECDH(curve)":
+		prefix: "crypto.createECDH(curve)"
+		body: "crypto.createECDH(${1:curve})"
+	"crypto.pbkdf2(password, salt, iterations, keylen, digest, callback)":
+		prefix: "crypto.pbkdf2(password, salt, iterations, keylen, digest, callback)"
+		body: "crypto.pbkdf2(${1:password}, ${2: }, ${3:salt}, ${4: }, ${5:iterations}, ${6: }, ${7:keylen}, ${8: }, ${9:digest}, ${10: }, ${11:callback})"
+	"crypto.pbkdf2Sync(password, salt, iterations, keylen, digest)":
+		prefix: "crypto.pbkdf2Sync(password, salt, iterations, keylen, digest)"
+		body: "crypto.pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:digest})"
+	"crypto.Certificate()":
+		prefix: "crypto.Certificate()"
+		body: "crypto.Certificate()"
+	"crypto.setEngine(id, flags)":
+		prefix: "crypto.setEngine(id, flags)"
+		body: "crypto.setEngine(${1:id}, ${2:flags})"
+	"crypto.pseudoRandomBytes()":
+		prefix: "crypto.pseudoRandomBytes()"
+		body: "crypto.pseudoRandomBytes()"
+	"crypto.randomBytes()":
+		prefix: "crypto.randomBytes()"
+		body: "crypto.randomBytes()"
+	"crypto.prng()":
+		prefix: "crypto.prng()"
+		body: "crypto.prng()"
+	"crypto.rng()":
+		prefix: "crypto.rng()"
+		body: "crypto.rng()"
+	"crypto.getCiphers()":
+		prefix: "crypto.getCiphers()"
+		body: "crypto.getCiphers()"
+	"crypto.getHashes()":
+		prefix: "crypto.getHashes()"
+		body: "crypto.getHashes()"
+	"crypto.getCurves()":
+		prefix: "crypto.getCurves()"
+		body: "crypto.getCurves()"
+	"crypto.createCredentials(options, context)":
+		prefix: "crypto.createCredentials(options, context)"
+		body: "crypto.createCredentials(${1:options}, ${2:context})"
+	"crypto.Credentials(secureProtocol, flags, context)":
+		prefix: "crypto.Credentials(secureProtocol, flags, context)"
+		body: "crypto.Credentials(${1:secureProtocol}, ${2:flags}, ${3:context})"

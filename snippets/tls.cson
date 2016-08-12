@@ -1,0 +1,34 @@
+".source.js":
+	"tls.getCiphers()":
+		prefix: "tls.getCiphers()"
+		body: "tls.getCiphers()"
+	"tls.convertNPNProtocols(NPNProtocols, out)":
+		prefix: "tls.convertNPNProtocols(NPNProtocols, out)"
+		body: "tls.convertNPNProtocols(${1:NPNProtocols}, ${2:out})"
+	"tls.checkServerIdentity(host, cert)":
+		prefix: "tls.checkServerIdentity(host, cert)"
+		body: "tls.checkServerIdentity(${1:host}, ${2:cert})"
+	"tls.parseCertString(s)":
+		prefix: "tls.parseCertString(s)"
+		body: "tls.parseCertString(${1:s})"
+	"tls.createSecureContext(options, context)":
+		prefix: "tls.createSecureContext(options, context)"
+		body: "tls.createSecureContext(${1:options}, ${2:context})"
+	"tls.SecureContext(secureProtocol, flags, context)":
+		prefix: "tls.SecureContext(secureProtocol, flags, context)"
+		body: "tls.SecureContext(${1:secureProtocol}, ${2:flags}, ${3:context})"
+	"tls.TLSSocket(socket, options)":
+		prefix: "tls.TLSSocket(socket, options)"
+		body: "tls.TLSSocket(${1:socket}, ${2:options})"
+	"tls.Server(/* [options], listener */)":
+		prefix: "tls.Server(/* [options], listener */)"
+		body: "tls.Server(${1:/*}, ${2:[options]}, ${3:listener}, ${4:*/})"
+	"tls.createServer(options, listener)":
+		prefix: "tls.createServer(options, listener)"
+		body: "tls.createServer(${1:options}, ${2:listener})"
+	"tls.connect(/* [port, host], options, cb */)":
+		prefix: "tls.connect(/* [port, host], options, cb */)"
+		body: "tls.connect(${1:/*}, ${2:[port}, ${3:host]}, ${4:options}, ${5:cb}, ${6:*/})"
+	"tls.createSecurePair(context, isServer, requestCert, rejectUnauthorized)":
+		prefix: "tls.createSecurePair(context, isServer, requestCert, rejectUnauthorized)"
+		body: "tls.createSecurePair(${1:context}, ${2: }, ${3:isServer}, ${4: }, ${5:requestCert}, ${6: }, ${7:rejectUnauthorized})"

@@ -1,0 +1,31 @@
+".source.js":
+	"v8.getHeapStatistics()":
+		prefix: "v8.getHeapStatistics()"
+		body: "v8.getHeapStatistics()"
+	"v8.setFlagsFromString()":
+		prefix: "v8.setFlagsFromString()"
+		body: "v8.setFlagsFromString()"
+	"vm.Script()":
+		prefix: "vm.Script()"
+		body: "vm.Script()"
+	"vm.createScript(code, options)":
+		prefix: "vm.createScript(code, options)"
+		body: "vm.createScript(${1:code}, ${2:options})"
+	"vm.createContext(sandbox)":
+		prefix: "vm.createContext(sandbox)"
+		body: "vm.createContext(${1:sandbox})"
+	"vm.runInDebugContext(code)":
+		prefix: "vm.runInDebugContext(code)"
+		body: "vm.runInDebugContext(${1:code})"
+	"vm.runInContext(code, contextifiedSandbox, options)":
+		prefix: "vm.runInContext(code, contextifiedSandbox, options)"
+		body: "vm.runInContext(${1:code}, ${2:contextifiedSandbox}, ${3:options})"
+	"vm.runInNewContext(code, sandbox, options)":
+		prefix: "vm.runInNewContext(code, sandbox, options)"
+		body: "vm.runInNewContext(${1:code}, ${2:sandbox}, ${3:options})"
+	"vm.runInThisContext(code, options)":
+		prefix: "vm.runInThisContext(code, options)"
+		body: "vm.runInThisContext(${1:code}, ${2:options})"
+	"vm.isContext()":
+		prefix: "vm.isContext()"
+		body: "vm.isContext()"
